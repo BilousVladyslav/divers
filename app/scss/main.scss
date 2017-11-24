@@ -1,0 +1,29 @@
+@import "includes/normalize";
+@import "includes/fonts";
+@import "includes/vars";
+@import "libs/slick/slick";
+@import "libs/simplebar";
+@import "libs/fancybox";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+body {
+  font-family: $averta;
+}
+a {
+  text-decoration: none;
+  &:active {
+    color: inherit;
+  }
+}
+
+@import "pages/index";
+
+@import "media";
