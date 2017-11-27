@@ -1,0 +1,54 @@
+.shop {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1030px;
+    margin: 0 auto;
+  }
+  &__shares {
+    width: 600px;
+    height: 360px;
+    background-image: url("../img/shop/rectangle.jpg");
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 65px 55px 100px;
+    position: relative;
+  }
+  &__discount {
+    font-size: 81px;
+    color: #fff;
+    padding-bottom: 35px;
+      font-family: "Myriad Pro";
+      text-transform: uppercase;
+      line-height: 0.7;
+
+  }
+  &__shares-text {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    line-height: 1.5;
+  }
+  &__shares-btn {
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: #22a5de;
+    line-height: 2.625;
+    position: absolute;
+    left: 55px;
+    bottom: 50px;
+    background-color: #fff;
+    padding: 0 40px;
+    border-radius: 24px;
+  }
+  &__items {
+    background-color: #4ea7f9;
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+  }
+}
+
