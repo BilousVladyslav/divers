@@ -1,0 +1,105 @@
+.shop {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1030px;
+    margin: 0 auto;
+  }
+  &__shares {
+    width: 600px;
+    height: 360px;
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 65px 55px 100px;
+    position: relative;
+  }
+  &__discount {
+    font-size: 81px;
+    color: #fff;
+    padding-bottom: 35px;
+      font-family: "Myriad Pro";
+      text-transform: uppercase;
+      line-height: 0.7;
+
+  }
+  &__shares-text {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    line-height: 1.5;
+  }
+  &__shares-btn {
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: #22a5de;
+    line-height: 2.5;
+    position: absolute;
+    left: 55px;
+    bottom: 40px;
+    background-color: #fff;
+    padding: 0 40px;
+    border-radius: 24px;
+  }
+  &__items {
+    height: 360px;
+    width: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  &__item {
+    width: 380px;
+    height: 360px;
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  &__item-block {
+    padding: 45px 70px 100px 55px;
+  }
+  &__item-name {
+    font-family: "OpenSans";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #455A64;
+    padding-bottom: 20px;
+  }
+  &__item-text {
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-bottom: 20px;
+  }
+  &__item-price {
+    font-size: 24px;
+    font-family: "OpenSans";
+    color: #FFFF00;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  &__item-watch {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+  &__arrow {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 115px;
+    top: 290px;
+    z-index: 2;
+    &_left {
+      left: 55px;
+    }
+  }
+}
+
