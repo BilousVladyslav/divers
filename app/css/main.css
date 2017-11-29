@@ -1340,7 +1340,6 @@ a {
 .shop__shares {
   width: 600px;
   height: 360px;
-  background-image: url("../img/shop/rectangle.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1367,16 +1366,112 @@ a {
   font-size: 16px;
   font-family: "Myriad Pro";
   color: #22a5de;
-  line-height: 2.625;
+  line-height: 2.5;
   position: absolute;
   left: 55px;
-  bottom: 50px;
+  bottom: 40px;
   background-color: #fff;
   padding: 0 40px;
   border-radius: 24px; }
 
 .shop__items {
-  background-color: #4ea7f9;
   height: 360px;
-  width: 360px;
-  border-radius: 15px; }
+  width: 380px;
+  border-radius: 15px;
+  overflow: hidden; }
+
+.shop__item {
+  width: 380px;
+  height: 360px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+.shop__item-block {
+  padding: 45px 70px 100px 55px; }
+
+.shop__item-name {
+  font-family: "OpenSans";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #455A64;
+  padding-bottom: 20px; }
+
+.shop__item-text {
+  font-size: 16px;
+  font-family: "OpenSans";
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-bottom: 20px; }
+
+.shop__item-price {
+  font-size: 24px;
+  font-family: "OpenSans";
+  color: #FFFF00;
+  font-weight: bold;
+  line-height: 1.5; }
+
+.shop__item-watch {
+  position: absolute;
+  bottom: 15px;
+  right: 15px; }
+
+.shop__arrow {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 115px;
+  top: 290px;
+  z-index: 2; }
+  .shop__arrow_left {
+    left: 55px; }
+
+@media (max-width: 1100px) {
+  .shop {
+    padding: 0 40px; }
+    .shop__wrapper {
+      width: auto; }
+    .shop__shares {
+      width: calc(50% - 25px);
+      padding: 60px 25px 100px; }
+    .shop__shares-btn {
+      left: 25px;
+      padding: 0 10px; }
+    .shop__items {
+      width: calc(50% - 25px); }
+    .shop__item-block {
+      padding: 15px 20px 100px 30px; }
+    .shop__item-watch {
+      bottom: 5px;
+      right: 5px; }
+    .shop__arrow {
+      top: 300px; }
+      .shop__arrow_left {
+        left: 30px; }
+      .shop__arrow_right {
+        left: 80px; } }
+
+@media (max-width: 650px) {
+  .shop {
+    padding: 0; }
+    .shop__wrapper {
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 0 60px; }
+    .shop__shares {
+      width: 100%;
+      margin-bottom: 50px; }
+    .shop__items {
+      width: 100%; } }
+
+@media (max-width: 400px) {
+  .shop__wrapper {
+    padding: 0 15px; } }
