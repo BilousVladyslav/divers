@@ -1335,7 +1335,8 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 1030px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 80px; }
 
 .shop__shares {
   width: 600px;
@@ -1372,7 +1373,8 @@ a {
   bottom: 40px;
   background-color: #fff;
   padding: 0 40px;
-  border-radius: 24px; }
+  border-radius: 24px;
+  cursor: pointer; }
 
 .shop__items {
   height: 360px;
@@ -1493,7 +1495,7 @@ a {
     top: 75%;
     margin-left: -105px;
     padding: 5px 65px;
-    border: 2px solid black;
+    border: 2px solid white;
     cursor: pointer; }
   .trainer-card__img {
     width: 100%;
@@ -1519,9 +1521,9 @@ a {
     display: block;
     padding-bottom: 100px; }
     .trainers__team {
-      font-size: 30px; }
+      font-size: 40px; }
     .trainers__text {
-      font-size: 16px; }
+      font-size: 18px; }
     .trainers__wrapper {
       width: 130%; }
   .trainer-card {
@@ -1530,12 +1532,103 @@ a {
     .trainer-card:hover .trainer-card__overflow {
       opacity: 0; } }
 
+@media (max-width: 750px) {
+  .trainers__team {
+    font-size: 30px; }
+  .trainers__text {
+    font-size: 16px; } }
+
 @media (max-width: 400px) {
   .trainers__wrapper {
     width: 160%; }
   .trainer-card {
     margin: 0 auto;
     margin-right: 20px; } }
+
+.courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 300px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .courses__item {
+    display: block;
+    position: relative;
+    width: 40%;
+    padding: 0 2%; }
+  .courses__upper-layer {
+    width: 100%;
+    display: block; }
+  .courses__wrapper {
+    padding: 6.5%;
+    width: 100%;
+    background-color: #FFD600;
+    text-align: left;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer; }
+  .courses__text {
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: #212121;
+    text-transform: uppercase; }
+  .courses__arrow {
+    color: #212121;
+    width: 16px;
+    height: 14px; }
+
+@media (max-width: 1700px) {
+  .courses {
+    padding: 0 200px; } }
+
+@media (max-width: 1500px) {
+  .courses {
+    padding: 0 100px; } }
+
+@media (max-width: 1300px) {
+  .courses {
+    padding: 0; } }
+
+@media (max-width: 1100px) {
+  .courses__text {
+    font-size: 14px; } }
+
+@media (max-width: 950px) {
+  .courses__text {
+    font-size: 11px; } }
+
+@media (max-width: 400px) {
+  .courses {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 0; }
+    .courses__item {
+      padding: 25px 0;
+      width: 70%; }
+    .courses__wrapper {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .courses__text {
+      font-size: 16px; } }
 
 @media (max-width: 1100px) {
   .shop {
@@ -1644,7 +1737,7 @@ a {
     top: 75%;
     margin-left: -105px;
     padding: 5px 65px;
-    border: 2px solid black;
+    border: 2px solid white;
     cursor: pointer; }
   .trainer-card__img {
     width: 100%;
@@ -1670,9 +1763,9 @@ a {
     display: block;
     padding-bottom: 100px; }
     .trainers__team {
-      font-size: 30px; }
+      font-size: 40px; }
     .trainers__text {
-      font-size: 16px; }
+      font-size: 18px; }
     .trainers__wrapper {
       width: 130%; }
   .trainer-card {
@@ -1681,9 +1774,100 @@ a {
     .trainer-card:hover .trainer-card__overflow {
       opacity: 0; } }
 
+@media (max-width: 750px) {
+  .trainers__team {
+    font-size: 30px; }
+  .trainers__text {
+    font-size: 16px; } }
+
 @media (max-width: 400px) {
   .trainers__wrapper {
     width: 160%; }
   .trainer-card {
     margin: 0 auto;
     margin-right: 20px; } }
+
+.courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 300px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .courses__item {
+    display: block;
+    position: relative;
+    width: 40%;
+    padding: 0 2%; }
+  .courses__upper-layer {
+    width: 100%;
+    display: block; }
+  .courses__wrapper {
+    padding: 6.5%;
+    width: 100%;
+    background-color: #FFD600;
+    text-align: left;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer; }
+  .courses__text {
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: #212121;
+    text-transform: uppercase; }
+  .courses__arrow {
+    color: #212121;
+    width: 16px;
+    height: 14px; }
+
+@media (max-width: 1700px) {
+  .courses {
+    padding: 0 200px; } }
+
+@media (max-width: 1500px) {
+  .courses {
+    padding: 0 100px; } }
+
+@media (max-width: 1300px) {
+  .courses {
+    padding: 0; } }
+
+@media (max-width: 1100px) {
+  .courses__text {
+    font-size: 14px; } }
+
+@media (max-width: 950px) {
+  .courses__text {
+    font-size: 11px; } }
+
+@media (max-width: 400px) {
+  .courses {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 0; }
+    .courses__item {
+      padding: 25px 0;
+      width: 70%; }
+    .courses__wrapper {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .courses__text {
+      font-size: 16px; } }

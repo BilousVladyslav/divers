@@ -1,0 +1,42 @@
+.courses {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 300px;
+  align-items: flex-end;
+  &__item {
+    display: block;
+    position: relative;
+    width: 40%;
+    padding: 0 2%;
+  }
+  &__upper-layer {
+    width: 100%;
+    display: block;
+  }
+  &__wrapper {
+    padding:  6.5%;
+    width: 100%;
+    background-color: #FFD600;
+    text-align: left;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  &__text {
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: #212121;
+    text-transform: uppercase;
+  }
+  &__arrow {
+    color: #212121;
+    width: 16px;
+    height: 14px;
+  }
+}
+
+
