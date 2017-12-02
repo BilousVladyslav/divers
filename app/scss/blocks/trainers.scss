@@ -1,0 +1,86 @@
+.trainers {
+  padding-bottom: 120px;
+  &__team {
+    font-size: 40px;
+    font-family: "OpenSans";
+    color: #212121;
+    line-height: 0.972;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 35px;
+  }
+  &__text {
+    font-size: 20px;
+    font-family: "OpenSans";
+    color: #212121;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 55px;
+    flex-wrap: wrap;
+  }
+}
+.trainer-card {
+  border-radius: 15px;
+  overflow: hidden;
+  width: calc(25% - 35px);
+  margin-bottom: 50px;
+  display: block;
+  position: relative;
+  &:hover .trainer-card__overflow {
+    opacity: 1;
+  }
+  &__img-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  &__overflow {
+    position: absolute;
+    background-color: rgba(17, 150, 225, 0.75);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: .4s;
+    opacity: 0;
+  }
+  &__btn {
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: #FFFFFF;
+    line-height: 2.25;
+    position: absolute;
+    border-radius: 30px;
+    left:50%;
+    top:75%;
+    margin-left: -105px;
+    padding: 5px 65px;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  &__img {
+    width: 100%;
+    display: block;
+  }
+  &__name {
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: #212121;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.188;
+    text-align: center;
+  }
+  &__city {
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: #C3C3C3;
+    line-height: 2.188;
+    text-align: center;
+  }
+}
