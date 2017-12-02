@@ -1429,7 +1429,8 @@ a {
   height: 24px;
   left: 115px;
   top: 290px;
-  z-index: 2; }
+  z-index: 2;
+  cursor: pointer; }
   .shop__arrow_left {
     left: 55px; }
 
@@ -1582,6 +1583,7 @@ a {
     cursor: pointer; }
   .courses__text {
     font-size: 16px;
+    font-weight: bold;
     font-family: "OpenSans";
     color: #212121;
     text-transform: uppercase; }
@@ -1629,6 +1631,78 @@ a {
               align-items: center; }
     .courses__text {
       font-size: 16px; } }
+
+.insta {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #4ccef6; }
+  .insta__tablet-text {
+    width: 100%;
+    font-size: 36px;
+    font-family: "OpenSans";
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: none; }
+  .insta__ad {
+    width: 20%;
+    height: 19.85vw; }
+  .insta__text {
+    font-size: 1.3vw;
+    font-family: "OpenSans";
+    color: #212121;
+    line-height: 1.5;
+    padding-left: 20%;
+    padding-top: 15%; }
+  .insta__link {
+    font-size: 1.2vw;
+    font-family: "OpenSans";
+    color: #212121;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 20%;
+    padding-top: 8%; }
+  .insta__photo {
+    height: 50%;
+    width: 20%;
+    display: block; }
+
+@media (max-width: 1650px) {
+  .insta__ad {
+    height: 19.75vw; } }
+
+@media (max-width: 1250px) {
+  .insta__ad {
+    height: 19.7vw; } }
+
+@media (max-width: 1100px) {
+  .insta {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 500px; }
+    .insta__tablet-text {
+      display: block;
+      width: auto; }
+    .insta__ad {
+      display: none; }
+    .insta__photo {
+      display: none; } }
+
+@media (max-width: 800px) {
+  .insta {
+    height: 450px; } }
+
+@media (max-width: 400px) {
+  .insta {
+    height: 300px; } }
 
 @media (max-width: 1100px) {
   .shop {
@@ -1824,6 +1898,7 @@ a {
     cursor: pointer; }
   .courses__text {
     font-size: 16px;
+    font-weight: bold;
     font-family: "OpenSans";
     color: #212121;
     text-transform: uppercase; }
@@ -1871,3 +1946,75 @@ a {
               align-items: center; }
     .courses__text {
       font-size: 16px; } }
+
+.insta {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #4ccef6; }
+  .insta__tablet-text {
+    width: 100%;
+    font-size: 36px;
+    font-family: "OpenSans";
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: none; }
+  .insta__ad {
+    width: 20%;
+    height: 19.85vw; }
+  .insta__text {
+    font-size: 1.3vw;
+    font-family: "OpenSans";
+    color: #212121;
+    line-height: 1.5;
+    padding-left: 20%;
+    padding-top: 15%; }
+  .insta__link {
+    font-size: 1.2vw;
+    font-family: "OpenSans";
+    color: #212121;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 20%;
+    padding-top: 8%; }
+  .insta__photo {
+    height: 50%;
+    width: 20%;
+    display: block; }
+
+@media (max-width: 1650px) {
+  .insta__ad {
+    height: 19.75vw; } }
+
+@media (max-width: 1250px) {
+  .insta__ad {
+    height: 19.7vw; } }
+
+@media (max-width: 1100px) {
+  .insta {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 500px; }
+    .insta__tablet-text {
+      display: block;
+      width: auto; }
+    .insta__ad {
+      display: none; }
+    .insta__photo {
+      display: none; } }
+
+@media (max-width: 800px) {
+  .insta {
+    height: 450px; } }
+
+@media (max-width: 400px) {
+  .insta {
+    height: 300px; } }

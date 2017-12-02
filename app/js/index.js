@@ -6,8 +6,6 @@ if ($(".shop__items").length) {
         nextArrow: '<img class="shop__arrow shop__arrow_right" src="../img/shop/ellipse-right.png">'
     });
 }
-
-
 if (document.body.clientWidth<1100){
     if ($(".trainers__wrapper").length) {
         $(".trainers__wrapper").slick({
