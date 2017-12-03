@@ -1,0 +1,47 @@
+.content-section {
+  display: block;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 200px 120px ;
+  &__global-wrapper {
+    padding: 0 6.5%;
+  }
+  &__top-wrapper {
+    display: block;
+    width: 350px;
+    padding-bottom: 70px;
+  }
+  &__title {
+    font-size: 36px;
+    font-family: "OpenSans";
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1.333;
+    margin-bottom: 35px;
+  }
+  &__calendar {
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: #212121;
+    line-height: 1.5;
+    background-color:#FFD600;
+    width: 250px;
+    border-radius: 30px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__item {
+    border-radius: 15px;
+    background-color: #051030;
+    width: 375px;
+    height: 505px;
+  }
+}
+
+

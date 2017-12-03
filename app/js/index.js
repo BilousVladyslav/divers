@@ -14,3 +14,12 @@ if (document.body.clientWidth<1100){
             arrows: false,
     });
 }}
+if (document.body.clientWidth<1100){
+    if ($(".content-section__wrapper").length) {
+        $(".content-section__wrapper").slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+        });
+    }
+}
