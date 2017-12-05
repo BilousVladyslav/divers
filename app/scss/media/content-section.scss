@@ -41,20 +41,21 @@
 @media (max-width: 1100px) {
   .content-section {
     overflow: hidden;
-    padding: 100px 30px 120px ;
+    padding: 100px 30px 120px;
     &__top-wrapper {
       width: 230px;
     }
-      &__title {
-        font-size: 24px;
-        &__wrapper {
-          width: 110%;
-        }
-        &__item {
-          margin-right: 100px;
-          width: 375px;
-          height: 505px;
-        }
+    &__title {
+      font-size: 24px;
+      &__wrapper {
+        width: 110%;
+      }
+      &__item {
+        margin-right: 100px;
+        width: 375px;
+        height: 505px;
+      }
+
     }
   }
   .event {
@@ -166,6 +167,9 @@
       padding: 30px 30px 20px 15px;
       &__date {
         font-size: 24px;
+      }
+      &__location {
+        top: 70px;
       }
       &__text {
         font-size: 16px;

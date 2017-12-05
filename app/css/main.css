@@ -1755,7 +1755,21 @@ a {
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover; }
+  .event:hover .event__overflow {
+    opacity: 1; }
+  .event__overflow {
+    position: absolute;
+    background-color: rgba(5, 16, 48, 0.75);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    opacity: 0;
+    border-radius: 15px; }
   .event__date {
+    position: absolute;
     font-size: 36px;
     font-family: "OpenSans";
     color: #FFFFFF;
@@ -1763,11 +1777,13 @@ a {
     line-height: 0.667;
     padding-bottom: 20px; }
   .event__location {
+    position: absolute;
     font-size: 24px;
     font-family: "OpenSans";
     color: #FFFFFF;
     text-transform: uppercase;
-    line-height: 1; }
+    line-height: 1;
+    top: 90px; }
   .event__text {
     position: absolute;
     bottom: 50px;
@@ -1778,7 +1794,12 @@ a {
 
 .reports {
   position: relative; }
+  .reports:hover .reports__overflow {
+    opacity: 1; }
+  .reports:hover .reports__text {
+    color: #00a6eb; }
   .reports__photo {
+    position: relative;
     display: block;
     width: 100%;
     height: 55%;
@@ -1787,6 +1808,18 @@ a {
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover; }
+  .reports__overflow {
+    position: absolute;
+    background-color: rgba(5, 16, 48, 0.75);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    opacity: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; }
   .reports__words {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -1814,6 +1847,33 @@ a {
     color: #B8BDC2;
     text-transform: uppercase;
     line-height: 1.5; }
+
+.bg_item {
+  border-radius: 15px;
+  background-color: white;
+  position: absolute;
+  left: 54px;
+  top: 6072px;
+  width: 378px;
+  height: 504px;
+  z-index: 68; }
+
+.фото_и_видео_отчет_с_Дайвинг_тура_в_Египет_ {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #00a6eb;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+  -moz-transform: scale(1, 1.1);
+  -webkit-transform: scale(1, 1.1);
+  -ms-transform: scale(1, 1.1);
+  position: absolute;
+  left: 84.367px;
+  top: 6415.756px;
+  width: 287.609px;
+  height: 41.281px;
+  z-index: 71; }
 
 @media (max-width: 1700px) {
   .content-section__global-wrapper {
@@ -1926,6 +1986,8 @@ a {
     padding: 30px 30px 20px 15px; }
     .content-section .event__date {
       font-size: 24px; }
+    .content-section .event__location {
+      top: 70px; }
     .content-section .event__text {
       font-size: 16px; }
   .content-section .reports {
@@ -2083,7 +2145,9 @@ a {
   .top-section__item {
     padding: 40px 50px 70px 50px;
     height: 410px;
-    top: 320px; }
+    top: 320px;
+    width: 90%;
+    left: 5%; }
   .top-section__caption {
     font-size: 24px; }
   .top-section__text {
@@ -2542,7 +2606,21 @@ a {
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover; }
+  .event:hover .event__overflow {
+    opacity: 1; }
+  .event__overflow {
+    position: absolute;
+    background-color: rgba(5, 16, 48, 0.75);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    opacity: 0;
+    border-radius: 15px; }
   .event__date {
+    position: absolute;
     font-size: 36px;
     font-family: "OpenSans";
     color: #FFFFFF;
@@ -2550,11 +2628,13 @@ a {
     line-height: 0.667;
     padding-bottom: 20px; }
   .event__location {
+    position: absolute;
     font-size: 24px;
     font-family: "OpenSans";
     color: #FFFFFF;
     text-transform: uppercase;
-    line-height: 1; }
+    line-height: 1;
+    top: 90px; }
   .event__text {
     position: absolute;
     bottom: 50px;
@@ -2565,7 +2645,12 @@ a {
 
 .reports {
   position: relative; }
+  .reports:hover .reports__overflow {
+    opacity: 1; }
+  .reports:hover .reports__text {
+    color: #00a6eb; }
   .reports__photo {
+    position: relative;
     display: block;
     width: 100%;
     height: 55%;
@@ -2574,6 +2659,18 @@ a {
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover; }
+  .reports__overflow {
+    position: absolute;
+    background-color: rgba(5, 16, 48, 0.75);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    opacity: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; }
   .reports__words {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -2601,6 +2698,33 @@ a {
     color: #B8BDC2;
     text-transform: uppercase;
     line-height: 1.5; }
+
+.bg_item {
+  border-radius: 15px;
+  background-color: white;
+  position: absolute;
+  left: 54px;
+  top: 6072px;
+  width: 378px;
+  height: 504px;
+  z-index: 68; }
+
+.фото_и_видео_отчет_с_Дайвинг_тура_в_Египет_ {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #00a6eb;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+  -moz-transform: scale(1, 1.1);
+  -webkit-transform: scale(1, 1.1);
+  -ms-transform: scale(1, 1.1);
+  position: absolute;
+  left: 84.367px;
+  top: 6415.756px;
+  width: 287.609px;
+  height: 41.281px;
+  z-index: 71; }
 
 @media (max-width: 1700px) {
   .content-section__global-wrapper {
@@ -2713,6 +2837,8 @@ a {
     padding: 30px 30px 20px 15px; }
     .content-section .event__date {
       font-size: 24px; }
+    .content-section .event__location {
+      top: 70px; }
     .content-section .event__text {
       font-size: 16px; }
   .content-section .reports {
@@ -2870,7 +2996,9 @@ a {
   .top-section__item {
     padding: 40px 50px 70px 50px;
     height: 410px;
-    top: 320px; }
+    top: 320px;
+    width: 90%;
+    left: 5%; }
   .top-section__caption {
     font-size: 24px; }
   .top-section__text {
