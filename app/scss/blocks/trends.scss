@@ -1,0 +1,124 @@
+.trends {
+  padding: 0 100px;
+  &__wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 96%;
+  }
+  &__choise {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+  }
+  &__first-level-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  &__second-level-nav {
+    display: none;
+    flex-direction: column;
+  }
+  &__first-level-nav-text {
+    padding: 50px 30px;
+    background: #25aae1;
+    &:not(:last-child) {
+      border-bottom: 1px solid #fff;
+    }
+  }
+  &__second-level-nav-text {
+    background: #2199ca;
+    padding: 25px 30px;
+    &:not(:last-child) {
+      border-bottom: 1px solid #fff;
+    }
+  }
+  &__content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: calc(100% - 325px);
+  }
+  &__content-left {
+    background: #FFaaaa;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 325px;
+  }
+  &__content-right {
+    background: #aaFFaa;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 325px;
+  }
+}
+// Магия - не трогать
+.trends__first-level_controller:checked + .trends__first-level-nav .trends__second-level-nav {
+  display: flex;
+}
+.trends__second-level_controller_1:checked {
+  & ~ .trends__second-level-nav-text_1 {
+    background: #fff;
+  }
+  & ~ .trends__content_1 {
+    display: flex;
+  }
+}
+.trends__second-level_controller_2:checked {
+  & ~ .trends__second-level-nav-text_2 {
+    background: #fff;
+  }
+  & ~ .trends__content_2 {
+    display: flex;
+  }
+}
+.trends__second-level_controller_3:checked {
+  & ~ .trends__second-level-nav-text_3 {
+    background: #fff;
+  }
+  & ~ .trends__content_3 {
+    display: flex;
+  }
+}
+
+
+.trends-city {
+  display: block;
+  width: fit-content;
+  position: relative;
+  &__text {
+
+  }
+  &__list {
+    position: absolute;
+    left: 50%;
+    background: #fff;
+    border-radius: 5px;
+    width: 100px;
+    top: 30px;
+    margin-left: -50px;
+    &::before {
+      content: url(../img/i.svg);
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: -14px;
+      margin-left: -12px;
+      width: 40px;
+      height: 20px;
+    }
+  }
+  &__item {
+    text-align: center;
+    &__hover {
+
+    }
+  }
+}

@@ -4,6 +4,7 @@
 @import "libs/slick/slick";
 @import "libs/simplebar";
 @import "libs/fancybox";
+@import "libs/alegar-lib";
 
 * {
   box-sizing: border-box;
@@ -25,16 +26,14 @@ a {
 }
 
 @import "pages/index";
+
 @import "blocks/shop";
 @import "blocks/trainers";
-@import "media/trainers";
 @import "blocks/courses";
-@import "media/courses";
 @import "blocks/insta";
-@import "media/insta";
 @import "blocks/content-section";
-@import "media/content-section";
 @import "blocks/top-section";
-@import "media/top-section";
+@import "blocks/trends";
+@import "blocks/map-city";
 
 @import "media";
