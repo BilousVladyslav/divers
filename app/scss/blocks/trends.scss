@@ -92,7 +92,10 @@
 .trends-city {
   display: block;
   width: fit-content;
+<<<<<<< HEAD
   position: relative;
+=======
+>>>>>>> 0beab9cf3a5d317af06bad6364822b91e18eb561
   &__text {
 
   }
@@ -101,6 +104,7 @@
     left: 50%;
     background: #fff;
     border-radius: 5px;
+<<<<<<< HEAD
     width: 100px;
     top: 30px;
     margin-left: -50px;
@@ -114,11 +118,20 @@
       width: 40px;
       height: 20px;
     }
+=======
+    overflow: hidden;
+    width: 100px;
+    margin-left: -50px;
+>>>>>>> 0beab9cf3a5d317af06bad6364822b91e18eb561
   }
   &__item {
     text-align: center;
     &__hover {
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 0beab9cf3a5d317af06bad6364822b91e18eb561
     }
   }
 }
