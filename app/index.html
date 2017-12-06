@@ -436,9 +436,21 @@
           </div>
         </div>
       </section>
+      <section id="map" class="map-city">
+        <script type="text/javascript">
+        // можно ajax'ом сделать из функции initMap
+          var locations = [
+            ["1", 49.980153, 36.235744, "./img/map-pin.png"],
+          ];
+        </script>
+      </section>
     </main>
     <footer>
     </footer>
+    <script src="./js/map.js" charset="utf-8"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqPHCgpNlZmXgnDH6XZ1zCYdRSki1d22Y&callback=initMap">
+    </script>
     <script src="./libs/jquery-3.2.1.min.js"></script>
     <script src="./libs/slick/slick.min.js" charset="utf-8"></script>
     <script src="./libs/alegar-lib.js" charset="utf-8"></script>
