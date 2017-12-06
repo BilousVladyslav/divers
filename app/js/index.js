@@ -23,3 +23,19 @@ if (document.body.clientWidth<1100){
         });
     }
 }
+$(".request-call__close").click(function () {
+  var t = this;
+  $(this).parents(".request-call").removeClass("request-call_active-show");
+  $('body').removeClass("fixed");
+  setTimeout(function(){
+    $(t).parents(".request-call").removeClass("request-call_active");
+  }, 300);
+});
+
+$(".top-section__details").click(function () {
+  $(".request-call").addClass("request-call_active");
+  $('body').addClass("fixed");
+  setTimeout(function(){
+    $(".request-call").addClass("request-call_active-show");
+  }, 1);
+});
