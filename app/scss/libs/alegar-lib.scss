@@ -1,0 +1,17 @@
+.drop-down {
+  position: relative;
+  &__controller:checked ~ .drop-down__list {
+    display: block;
+  }
+  &__text {
+
+  }
+  &__list {
+    position: absolute;
+    display: none;
+    width: 100%;
+  }
+  &__item {
+    cursor: pointer;
+  }
+}

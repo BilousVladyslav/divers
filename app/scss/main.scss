@@ -4,6 +4,7 @@
 @import "libs/slick/slick";
 @import "libs/simplebar";
 @import "libs/fancybox";
+@import "libs/alegar-lib";
 
 * {
   box-sizing: border-box;
@@ -36,5 +37,6 @@ a {
 @import "media/content-section";
 @import "blocks/top-section";
 @import "media/top-section";
+@import "blocks/trends";
 
 @import "media";
