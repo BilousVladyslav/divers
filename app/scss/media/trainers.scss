@@ -16,7 +16,7 @@
   .trainer-card {
     margin: 0 30px;
     outline: none;
-    &:hover .trainer-card__overflow {
+    &:active .trainer-card__overflow, .no-touch &:hover .trainer-card__overflow {
       opacity: 0;
   }
 }}

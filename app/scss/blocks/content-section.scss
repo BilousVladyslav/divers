@@ -51,7 +51,7 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  &:hover .event__overflow {
+  &:active .event__overflow, .no-touch &:hover .event__overflow {
     opacity: 1;
   }
   &__overflow {
@@ -94,7 +94,7 @@
 }
 .reports {
   position: relative;
-  &:hover {
+  &:active, .no-touch &:hover {
     .reports__overflow {
       opacity: 1;
     }
@@ -158,30 +158,3 @@
   }
 }
 
-.bg_item {
-  border-radius: 15px;
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  left: 54px;
-  top: 6072px;
-  width: 378px;
-  height: 504px;
-  z-index: 68;
-}
-.фото_и_видео_отчет_с_Дайвинг_тура_в_Египет_ {
-  font-size: 16px;
-  font-family: "Open Sans";
-  color: rgb(0, 166, 235);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.5;
-  -moz-transform: scale(1, 1.1);
-  -webkit-transform: scale(1, 1.1);
-  -ms-transform: scale(1, 1.1);
-  position: absolute;
-  left: 84.367px;
-  top: 6415.756px;
-  width: 287.609px;
-  height: 41.281px;
-  z-index: 71;
-}

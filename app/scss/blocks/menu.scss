@@ -160,7 +160,7 @@ header {
       border-top-right-radius: 15px;
     }
   }
-  &-item:hover {
+  &-item:active, .no-touch &-item:hover {
     background: #25aae1;
     color: white;
   }
@@ -221,7 +221,7 @@ header {
       border-top-right-radius: 7px;
     }
 
-    &:hover{
+    &:active, .no-touch &:hover{
       background: #25aae1;
       color: white;
     }
@@ -340,7 +340,7 @@ header {
         color: black;
         border-bottom: none;
     }
-    .header__items a:hover {
+  .header__items a:active, .no-touch .header__items a:hover {
         color: #fff;
         background: #25aae1;
         transition: 500ms;
