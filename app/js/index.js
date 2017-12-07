@@ -39,3 +39,22 @@ $(".top-section__details").click(function () {
     $(".request-call").addClass("request-call_active-show");
   }, 1);
 });
+
+$(function(){
+  if ($(this).scrollTop() > 20){
+    $('header').addClass('header_active');
+  } else {
+    $('header').removeClass('header_active');
+  }
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 0){
+      $('header').addClass('header_active');
+    } else {
+      $('header').removeClass('header_active');
+    }
+  });
+
+
+
+
+});

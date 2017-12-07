@@ -1984,7 +1984,6 @@ a {
   height: 650px;
   width: 100%; }
 
-<<<<<<< HEAD
 .request-call {
   position: fixed;
   top: 0;
@@ -2065,7 +2064,7 @@ a {
     -webkit-transition: .3s;
     transition: .3s;
     color: #aaaaaa; }
-=======
+
 header {
   margin: 0;
   padding: 0;
@@ -2077,25 +2076,36 @@ header {
   position: fixed;
   z-index: 1000; }
 
-.hhhhhhhhhhhhhhhhhhhhhheader_active .header__city {
+.header_active #header__nav {
+  border-bottom: none; }
+
+.header_active .header__city {
   opacity: 0; }
 
-.hhhhhhhhhhhhhhhhhhhhhheader_active .header__lang {
+.header_active .header__lang {
   opacity: 0; }
 
-.hhhhhhhhhhhhhhhhhhhhhheader_active .header__items-number {
+.header_active .header__items-number {
   top: 20px;
   color: black; }
 
-.hhhhhhhhhhhhhhhhhhhhhheader_active .header__items {
+.header_active .header__items {
   background: #fff; }
-  .hhhhhhhhhhhhhhhhhhhhhheader_active .header__items-item {
+  .header_active .header__items-item {
+    -webkit-transition: .4s;
+    transition: .4s;
     border-bottom: 4px solid #fff;
     color: black; }
 
+.header__items-item {
+  -webkit-transition: .4s;
+  transition: .4s; }
+
 .header__items, #touch-menu {
   background: #047abe;
-  height: 71px; }
+  height: 71px;
+  -webkit-transition: .4s;
+  transition: .4s; }
 
 #header__nav {
   display: -webkit-box;
@@ -2143,6 +2153,8 @@ header {
     padding-left: 15px; }
 
 .header__items-number {
+  -webkit-transition: .4s;
+  transition: .4s;
   color: white;
   font-size: 24px;
   position: absolute;
@@ -2151,8 +2163,8 @@ header {
 
 .header__items-item:hover {
   border-bottom: 4px solid #25aae1;
-  -webkit-transition: 800ms;
-  transition: 800ms; }
+  -webkit-transition: 400ms;
+  transition: 400ms; }
 
 .header__label {
   display: none;
@@ -2187,7 +2199,9 @@ header {
   z-index: 1; }
   .header__city-text {
     color: white;
-    padding: 20px; }
+    padding: 20px;
+    -webkit-transition: .4s;
+    transition: .4s; }
   .header__city-list {
     position: absolute;
     left: 50%;
@@ -2492,7 +2506,6 @@ header {
     top: 18px; }
   .header__number {
     display: none; } }
->>>>>>> 277526aaf239ba1d60e9a6e8d40d68c70ce7ab2c
 
 @media (max-width: 1100px) {
   .shop {
