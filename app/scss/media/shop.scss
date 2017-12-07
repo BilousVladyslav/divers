@@ -15,6 +15,9 @@
     &__items {
       width: calc(50% - 25px);
     }
+    &__item {
+      border-radius: 15px;
+    }
     &__item-block {
       padding: 15px 20px 100px 30px;
     }
