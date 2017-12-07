@@ -43,7 +43,7 @@
     overflow: hidden;
     padding: 100px 30px 120px;
     &__top-wrapper {
-      width: 230px;
+      width: 280px;
     }
     &__title {
       font-size: 24px;
@@ -51,17 +51,18 @@
         width: 110%;
       }
       &__item {
-        margin-right: 100px;
         width: 375px;
-        height: 505px;
+        height: 555px;
       }
 
     }
   }
   .event {
     padding: 40px 30px 20px 30px;
+    margin-right: 55px;
   }
   .reports {
+    margin-right: 55px;
     &__words {
       padding: 20px 20px 15px;
     }
