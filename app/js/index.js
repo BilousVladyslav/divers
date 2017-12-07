@@ -57,6 +57,34 @@ $(".top-section__details").click(function () {
   }, 1);
 });
 
+//---------------------------------------------------------------------------
+$(".shop__shares-btn").click(function () {
+  $(".info-popup").addClass("info-popup_active");
+  $('body').addClass("fixed");
+  setTimeout(function(){
+    $(".info-popup").addClass("info-popup_active-show");
+  }, 1);
+});
+$(".info-popup__close").click(function () {
+  var t = this;
+  $(this).parents(".info-popup").removeClass("info-popup_active-show");
+  $('body').removeClass("fixed");
+  setTimeout(function(){
+    $(t).parents(".info-popup").removeClass("info-popup_active");
+  }, 300);
+});
+$(".info-popup__bg").click(function () {
+  var t = this;
+  $(this).parents(".info-popup").removeClass("info-popup_active-show");
+  $('body').removeClass("fixed");
+  setTimeout(function(){
+    $(t).parents(".info-popup").removeClass("info-popup_active");
+  }, 300);
+});
+
+
+
+
 $(function(){
   if (!(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch)) document.body.classList.add('no-touch');
 
