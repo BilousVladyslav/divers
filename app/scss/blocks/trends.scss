@@ -1,6 +1,39 @@
 .trends {
-  padding: 0 100px;
+  background-image: url("../img/trends/bgimage.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 120px;
+  &__img{
+    position: relative;
+    &-overflow{
+      background-color: #051030;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      margin: 0;
+      top: 0;
+
+    }
+  }
+  &__tortoise{
+    position: absolute;
+    top: 920px;
+    right: 10px;
+  }
+  &__text{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 92px;
+    font-family: "MyriadProSemiBold";
+    padding-bottom: 60px;
+  }
   &__wrapper {
+    max-width: 1400px;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -21,17 +54,23 @@
     flex-direction: column;
   }
   &__first-level-nav-text {
+    font-family: "MyriadProBold";
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
     padding: 50px 30px;
     background: #25aae1;
     &:not(:last-child) {
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid #5ebce3;
     }
   }
   &__second-level-nav-text {
     background: #2199ca;
+    border-left: 5px solid #2199ca;
+    color: white;
     padding: 25px 30px;
     &:not(:last-child) {
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid #5ebce3;
     }
   }
   &__content {
@@ -43,21 +82,106 @@
     width: calc(100% - 325px);
   }
   &__content-left {
-    background: #FFaaaa;
+    background: #FFFFFF;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 325px;
+    :hover{
+    }
+    & h2, & p{
+      padding-left: 54px;
+      padding-top: 25px;
+      padding-right: 30px;
+    }
+    & img{
+      width: 100%;
+      padding: 0;
+    }
+    & p{
+      color: #212121;
+      padding-bottom: 50px;
+      line-height: 1.25;
+    }
+    & a{
+      padding-left: 54px;
+      color: #212121;
+      display: flex;
+    }
+    & h2{padding-top: 50px;}
   }
   &__content-right {
-    background: #aaFFaa;
+    background: #fafafc;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     width: 325px;
+    &-info {
+      border-bottom: 1px solid #f4f4f6;
+      & p, & h4{
+        font-family: "MyriadProBold";
+        padding-left: 27px;
+      }
+      & li{
+        font-family: "MyriadProRegular";
+        list-style-type: none;
+        padding-left: 40px;
+        padding-bottom: 25px;
+        line-height: 1.25;
+        position: relative;
+        &:before{
+          content: url("../img/trends/listyle.svg");
+          position: absolute;
+          left: 27px;
+          top: -1px;
+        }
+      }
+      & h4{
+        padding-top: 58px;
+        padding-bottom: 27px;
+      }
+      & p {padding-bottom: 60px;}
+    }
+    &-price{
+      & span{
+        font-size: 30px;
+        font-family: "MyriadProBold";
+        color: #25aae1;
+      }
+      &-value{
+        padding-left: 40px;
+        padding-bottom: 40px;
+        font-size: 15px;
+        font-family: "MyriadProSemiBold";
+      }
+      & a {color: #25aae1;}
+      &-btn1{
+        color: white;
+        background-color: #25aae1;
+        border-radius: 24px;
+        padding: 15px 80px;
+        margin-bottom: 24px;
+        width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &-btn2{
+        background-color: #ffd600;
+        border-radius: 24px;
+        padding: 15px 92.5px;
+        margin-bottom: 48px;
+        width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
+}
+
+.trends__content-left img {
+  display: block;
 }
 // Магия - не трогать
 .trends__first-level_controller:checked + .trends__first-level-nav .trends__second-level-nav {
@@ -66,6 +190,8 @@
 .trends__second-level_controller_1:checked {
   & ~ .trends__second-level-nav-text_1 {
     background: #fff;
+    color: #1f88b3;
+    border-left: 5px solid #f8f8f8;
   }
   & ~ .trends__content_1 {
     display: flex;
@@ -74,6 +200,8 @@
 .trends__second-level_controller_2:checked {
   & ~ .trends__second-level-nav-text_2 {
     background: #fff;
+    color: #1f88b3;
+    border-left: 5px solid #f8f8f8;
   }
   & ~ .trends__content_2 {
     display: flex;
@@ -82,6 +210,8 @@
 .trends__second-level_controller_3:checked {
   & ~ .trends__second-level-nav-text_3 {
     background: #fff;
+    color: #1f88b3;
+    border-left: 5px solid #f8f8f8;
   }
   & ~ .trends__content_3 {
     display: flex;
@@ -92,30 +222,182 @@
 .trends-city {
   display: block;
   width: fit-content;
-  position: relative;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  margin-left: 40px;
   &__text {
-
+    font-family: "MyriadProBold";
   }
   &__list {
     position: absolute;
     left: 50%;
     background: #fff;
-    border-radius: 5px;
-    width: 100px;
-    top: 30px;
-    margin-left: -50px;
-    &::before {
-      content: url(../img/i.svg);
-      display: block;
-      position: absolute;
-      left: 50%;
-      top: -14px;
-      margin-left: -12px;
-      width: 40px;
-      height: 20px;
-    }
+    border-radius: 10px;
+    overflow: hidden;
+    width: 120px;
+    margin-left: -60px;
   }
   &__item {
     text-align: center;
+    font-family: "MyriadProRegular";
+    font-size: 16px;
+    height: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    &:hover {
+      background-color: #25aae1;
+      color: #ffffff;
+    }
+  }
+}
+
+.trends__content-left-more {
+  transition: .3s;
+  opacity: 0;
+}
+.trends__content:hover {
+  & .trends__img-overflow {
+    opacity: 0.6;
+    transition: .3s;
+  }
+  & .trends__content-left-more {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+@media(max-width: 1100px){
+  .trends__choise{
+    width: 100%;
+  }
+  .trends__wrapper {
+    overflow: unset;
+  }
+  .trends__wrapper{
+    margin-bottom: 700px;
+  }
+  .trends{
+    padding-bottom: 800px;
+    &__tortoise{
+      display: none;
+    }
+    &__text{
+      font-size: 24px;
+      padding-bottom: 65px;
+      padding-top: 75px;
+    }
+    &-city{
+      padding-top: 58px;
+    }
+    &__content{
+      top: 100%;
+      width: 100%;
+      bottom: inherit;
+      flex-direction: column;
+      &-right{
+        flex-direction: row;
+        width: 100%;
+        display: flex;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        &-info{
+          width: 50%;
+          border-bottom: 0;
+          border-right: 1px solid #f4f4f6;
+          display: block;
+          height: fit-content;
+        }
+        &-price{
+          display: block;
+          width: 50%;
+        }
+      }
+    }
+    &__content-left{
+      position: relative;
+      & h2, & p {
+        padding-left: 40px;
+      }
+    }
+    &__content-right{
+      position: relative;
+    }
+    &__first-level-nav-text{
+      padding: 24px;
+      text-align: center;
+    }
+    &__second-level-nav-text{
+      padding: 14px;
+      text-align: center;
+    }
+  }
+  .trends__first-level-nav:first-of-type .trends__first-level-nav-text {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
+
+@media(max-width: 600px){
+  .trends{
+    padding-bottom: 900px;
+    background: #1179a3;
+    &__text{
+      text-align: left;
+      padding-left: 17px;
+      padding-bottom: 30px;
+      padding-top: 50px;
+    }
+    &__content-right{
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      flex-direction: column;
+      &-info{
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #f4f4f6;
+        & h4{
+          padding-left: 17px;
+          padding-top: 30px;
+        }
+        & p{
+          padding-left: 17px;
+          padding-bottom: 17px;
+        }
+        & li{
+          &:before{
+            left: 20px;
+          }
+        }
+      }
+      &-right{
+        &-price{
+          width: 100%;
+          padding-left: 17px;
+        }
+      }
+      &-price-value{
+        padding-left: 17px;
+      }
+    }
+    &__content-left{
+      & p{
+        padding-left: 17px;
+        padding-top: 0;
+      }
+      & h2{
+        padding-top: 28px;
+        padding-left: 17px;
+        padding-bottom: 14px;
+      }
+    }
+    &-city{
+      padding-top: 33px;
+      margin-left: 17px;
+      &-price-value{
+        padding-left: 17px;
+      }
+    }
+  }
+  .trends__content-right-price {
+    width: 100%;
   }
 }
