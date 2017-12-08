@@ -169,21 +169,19 @@ header {
   position: relative;
     &-text{
       color: white;
-      padding: 25px;
+      border: 1px solid white;
+      border-radius: 12px;
+      padding: 7px 11px;
       position: relative;
-      font-size: 12px;
-      &-border{
-        position: absolute;
-        left: 10px;
-        top: 19px;
-      }
+      font-size: 9px;
+      margin-bottom: 25px;
     }
     &-list{
       position: absolute;
       left: 50%;
       width: 54px;
-      margin-left: -31px;
-      top: 60px;
+      margin-left: -27px;
+      top: 43px;
       text-align: center;
       border-radius: 7px;
       background-color: white;
