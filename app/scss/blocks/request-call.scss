@@ -47,7 +47,7 @@
     color: #fff;
   }
   &__close {
-    background-image: url('../img/esc.png');
+    background-image: url('../img/esc.svg');
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -57,7 +57,7 @@
     right: 20px;
     cursor: pointer;
     &:active, .no-touch &:hover {
-      background-image: url('../img/esc-hover.png');
+      background-image: url('../img/esc-hover.svg');
     }
   }
 

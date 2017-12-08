@@ -462,6 +462,12 @@ template {
   src: url("../fonts/Open-Sans.ttf");
   src: url("../fonts/Open-Sans.ttf?#iefix") format("embedded-opentype"); }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/Open_Sans");
+  font-style: normal;
+  font-weight: normal; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -1419,19 +1425,19 @@ a {
   font-size: 81px;
   color: #fff;
   padding-bottom: 35px;
-  font-family: "Myriad Pro";
+  font-family: "Open Sans";
   text-transform: uppercase;
   line-height: 0.7; }
 
 .shop__shares-text {
   color: #fff;
   font-size: 16px;
-  font-family: "Myriad Pro";
+  font-family: "Open Sans";
   line-height: 1.5; }
 
 .shop__shares-btn {
   font-size: 16px;
-  font-family: "Myriad Pro";
+  font-family: "Open Sans";
   color: #22a5de;
   line-height: 2.5;
   position: absolute;
@@ -1504,7 +1510,7 @@ a {
   padding-bottom: 120px; }
   .trainers__team {
     font-size: 40px;
-    font-family: "OpenSans";
+    font-family: "Open Sans";
     color: #212121;
     line-height: 0.972;
     text-align: center;
@@ -1512,7 +1518,7 @@ a {
     margin-bottom: 35px; }
   .trainers__text {
     font-size: 20px;
-    font-family: "OpenSans";
+    font-family: "Open Sans";
     color: #212121;
     line-height: 1.5;
     text-align: center;
@@ -1553,7 +1559,7 @@ a {
     opacity: 0; }
   .trainer-card__btn {
     font-size: 16px;
-    font-family: "OpenSans";
+    font-family: "Open Sans";
     color: #FFFFFF;
     line-height: 2.25;
     position: absolute;
@@ -1569,7 +1575,7 @@ a {
     display: block; }
   .trainer-card__name {
     font-size: 16px;
-    font-family: "OpenSans";
+    font-family: "Open Sans";
     color: #212121;
     font-weight: bold;
     text-transform: uppercase;
@@ -1577,7 +1583,7 @@ a {
     text-align: center; }
   .trainer-card__city {
     font-size: 16px;
-    font-family: "OpenSans";
+    font-family: "Open Sans";
     color: #C3C3C3;
     line-height: 2.188;
     text-align: center; }
@@ -1721,7 +1727,8 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .info-popup__drive-ture .content-section__item {
-    margin: 20px; }
+    margin: 20px;
+    padding: 30px 0  30px; }
   .info-popup__drive-ture .content-section__item p {
     color: #fff; }
 
@@ -1784,9 +1791,6 @@ a {
 @media (max-width: 500px) {
   .info-popup__drive-ture .content-section__item {
     padding: 5px 7px; }
-    .info-popup__drive-ture .content-section__item .event__date {
-      padding-top: 5px;
-      padding-bottom: 5px; }
     .info-popup__drive-ture .content-section__item .event__location {
       padding-top: 0;
       font-size: 17px; }
@@ -1900,7 +1904,7 @@ a {
     margin-right: auto;
     margin-left: auto;
     padding-top: 92px;
-    font-family: "MyriadProSemiBold";
+    font-family: "Open Sans";
     padding-bottom: 60px; }
   .trends__wrapper {
     max-width: 1400px;
@@ -1933,7 +1937,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column; }
   .trends__first-level-nav-text {
-    font-family: "MyriadProBold";
+    font-family: "Open Sans";
     color: white;
     font-size: 16px;
     line-height: 1.5;
@@ -1991,10 +1995,10 @@ a {
     .trends__content-right-info {
       border-bottom: 1px solid #f4f4f6; }
       .trends__content-right-info p, .trends__content-right-info h4 {
-        font-family: "MyriadProBold";
+        font-family: "Open Sans";
         padding-left: 27px; }
       .trends__content-right-info li {
-        font-family: "MyriadProRegular";
+        font-family: "Open Sans";
         list-style-type: none;
         padding-left: 40px;
         padding-bottom: 25px;
@@ -2012,13 +2016,13 @@ a {
         padding-bottom: 60px; }
     .trends__content-right-price span {
       font-size: 30px;
-      font-family: "MyriadProBold";
+      font-family: "Open Sans";
       color: #25aae1; }
     .trends__content-right-price-value {
       padding-left: 40px;
       padding-bottom: 40px;
       font-size: 15px;
-      font-family: "MyriadProSemiBold"; }
+      font-family: "Open Sans"; }
     .trends__content-right-price a {
       color: #25aae1; }
     .trends__content-right-price-btn1 {
@@ -2086,7 +2090,7 @@ a {
   padding-top: 30px;
   margin-left: 40px; }
   .trends-city__text {
-    font-family: "MyriadProBold"; }
+    font-family: "Open Sans"; }
   .trends-city__list {
     position: absolute;
     left: 50%;
@@ -2097,7 +2101,7 @@ a {
     margin-left: -60px; }
   .trends-city__item {
     text-align: center;
-    font-family: "MyriadProRegular";
+    font-family: "Open Sans";
     font-size: 16px;
     height: 24px;
     padding-top: 4px;
@@ -2285,7 +2289,7 @@ a {
     padding: 15px 0;
     color: #fff; }
   .request-call__close {
-    background-image: url("../img/esc.png");
+    background-image: url("../img/esc.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -2295,7 +2299,7 @@ a {
     right: 20px;
     cursor: pointer; }
     .request-call__close:active, .no-touch .request-call__close:hover {
-      background-image: url("../img/esc-hover.png"); }
+      background-image: url("../img/esc-hover.svg"); }
   .request-call__bottom {
     padding: 0 50px; }
   .request-call__button {
@@ -2371,7 +2375,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  font-family: "MyriadProRegular";
+  font-family: "Open Sans";
   position: fixed;
   z-index: 1000; }
 
@@ -2810,7 +2814,7 @@ footer {
   border-bottom: 24px solid #25aae1;
   bottom: 0;
   width: 100%;
-  font-family: "MyriadProRegular";
+  font-family: "Open Sans";
   overflow: auto;
   height: auto; }
 
@@ -2859,12 +2863,15 @@ footer {
     .footer__desktop-content-about-info {
       color: #212121;
       padding-top: 79px;
-      line-height: 1.25; }
+      line-height: 1.25;
+      font-family: "Open Sans"; }
     .footer__desktop-content-about-phone {
-      padding-top: 54px; }
+      padding-top: 54px;
+      font-family: "Open Sans"; }
     .footer__desktop-content-about-number {
       padding-top: 22px;
-      font-size: 23px; }
+      font-size: 23px;
+      font-family: "Open Sans"; }
   .footer__desktop-content-nav a {
     padding-bottom: 18px;
     color: #212121; }
@@ -2881,7 +2888,8 @@ footer {
     padding-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    font-family: "Open Sans"; }
 
 .footer__tablet {
   display: none;
@@ -2899,7 +2907,8 @@ footer {
   -ms-flex-line-pack: stretch;
       align-content: stretch;
   overflow: hidden;
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: "Open Sans"; }
   .footer__tablet-columns {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2937,12 +2946,15 @@ footer {
     top: 77px; }
   .footer__tablet-columns-1-about-info {
     padding-bottom: 28px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-family: "Open Sans"; }
   .footer__tablet-columns-1-about-phone {
-    padding-bottom: 23px; }
+    padding-bottom: 23px;
+    font-family: "Open Sans"; }
   .footer__tablet-columns-1-about-number {
     padding-bottom: 52px;
-    font-size: 24px; }
+    font-size: 24px;
+    font-family: "Open Sans"; }
   .footer__tablet-columns-1-location2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2950,10 +2962,12 @@ footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    font-weight: bold; }
     .footer__tablet-columns-1-location2 a {
       color: #000a11;
-      padding-bottom: 18px; }
+      padding-bottom: 18px;
+      font-family: "Open Sans"; }
   .footer__tablet-columns-2-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2965,7 +2979,8 @@ footer {
     padding-bottom: 60px; }
     .footer__tablet-columns-2-nav a {
       color: #212121;
-      padding-bottom: 18px; }
+      padding-bottom: 18px;
+      font-family: "Open Sans"; }
   .footer__tablet-columns-2-location1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2973,10 +2988,12 @@ footer {
             flex-direction: column;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    font-weight: bold; }
     .footer__tablet-columns-2-location1 a {
       color: #000a11;
-      padding-bottom: 18px; }
+      padding-bottom: 18px;
+      font-family: "Open Sans"; }
   .footer__tablet-links-circle {
     position: absolute;
     top: -6px;
@@ -2984,7 +3001,8 @@ footer {
   .footer__tablet-links a {
     padding-bottom: 30px;
     color: #212121;
-    position: relative; }
+    position: relative;
+    font-family: "Open Sans"; }
 
 .footer__mobile {
   position: relative;
@@ -3000,14 +3018,17 @@ footer {
     top: 51px; }
   .footer__mobile-info {
     padding-bottom: 33px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-family: "Open Sans"; }
   .footer__mobile-phone {
     padding-top: 130px;
-    padding-bottom: 23px; }
+    padding-bottom: 23px;
+    font-family: "Open Sans"; }
   .footer__mobile-number {
     font-size: 24px;
     padding-bottom: 28px;
-    color: #212121; }
+    color: #212121;
+    font-family: "Open Sans"; }
   .footer__mobile-locations {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3031,7 +3052,8 @@ footer {
       .footer__mobile-locations-1 a, .footer__mobile-locations-2 a {
         color: #000a11;
         font-size: 12px;
-        padding-bottom: 22px; }
+        padding-bottom: 22px;
+        font-family: "Open Sans"; }
   .footer__mobile-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3061,6 +3083,10 @@ footer {
           justify-content: center;
   padding-top: 29px;
   padding-bottom: 30px; }
+
+.social-network {
+  font-weight: bold;
+  font-family: "Open Sans"; }
 
 @media (max-width: 1100px) {
   footer {
@@ -3099,7 +3125,7 @@ footer {
   display: none;
   background-color: white;
   top: 300px;
-  font-family: "MyriadProRegular"; }
+  font-family: "Open Sans"; }
   .popup__bg {
     position: absolute;
     background: black;
@@ -3181,6 +3207,9 @@ footer {
         border: none;
         background: #25aae1;
         color: white; }
+
+.info-popup * {
+  font-family: "Open Sans"; }
 
 .info-popup {
   -webkit-transition: .4s;
@@ -3411,7 +3440,7 @@ footer {
     margin-right: auto;
     margin-left: auto;
     padding-top: 92px;
-    font-family: "MyriadProSemiBold";
+    font-family: "Open Sans";
     padding-bottom: 60px; }
   .trends__wrapper {
     max-width: 1400px;
@@ -3444,7 +3473,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column; }
   .trends__first-level-nav-text {
-    font-family: "MyriadProBold";
+    font-family: "Open Sans";
     color: white;
     font-size: 16px;
     line-height: 1.5;
@@ -3502,10 +3531,10 @@ footer {
     .trends__content-right-info {
       border-bottom: 1px solid #f4f4f6; }
       .trends__content-right-info p, .trends__content-right-info h4 {
-        font-family: "MyriadProBold";
+        font-family: "Open Sans";
         padding-left: 27px; }
       .trends__content-right-info li {
-        font-family: "MyriadProRegular";
+        font-family: "Open Sans";
         list-style-type: none;
         padding-left: 40px;
         padding-bottom: 25px;
@@ -3523,13 +3552,13 @@ footer {
         padding-bottom: 60px; }
     .trends__content-right-price span {
       font-size: 30px;
-      font-family: "MyriadProBold";
+      font-family: "Open Sans";
       color: #25aae1; }
     .trends__content-right-price-value {
       padding-left: 40px;
       padding-bottom: 40px;
       font-size: 15px;
-      font-family: "MyriadProSemiBold"; }
+      font-family: "Open Sans"; }
     .trends__content-right-price a {
       color: #25aae1; }
     .trends__content-right-price-btn1 {
@@ -3597,7 +3626,7 @@ footer {
   padding-top: 30px;
   margin-left: 40px; }
   .trends-city__text {
-    font-family: "MyriadProBold"; }
+    font-family: "Open Sans"; }
   .trends-city__list {
     position: absolute;
     left: 50%;
@@ -3608,7 +3637,7 @@ footer {
     margin-left: -60px; }
   .trends-city__item {
     text-align: center;
-    font-family: "MyriadProRegular";
+    font-family: "Open Sans";
     font-size: 16px;
     height: 24px;
     padding-top: 4px;
@@ -3840,7 +3869,7 @@ footer {
     font-size: 11px;
     width: 100px; } }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .courses {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4112,7 +4141,7 @@ footer {
   border-bottom: 24px solid #25aae1;
   bottom: 0;
   width: 100%;
-  font-family: "MyriadProRegular";
+  font-family: "Open Sans";
   overflow: auto;
   height: auto; }
 
@@ -4161,12 +4190,15 @@ footer {
     .footer__desktop-content-about-info {
       color: #212121;
       padding-top: 79px;
-      line-height: 1.25; }
+      line-height: 1.25;
+      font-family: "Open Sans"; }
     .footer__desktop-content-about-phone {
-      padding-top: 54px; }
+      padding-top: 54px;
+      font-family: "Open Sans"; }
     .footer__desktop-content-about-number {
       padding-top: 22px;
-      font-size: 23px; }
+      font-size: 23px;
+      font-family: "Open Sans"; }
   .footer__desktop-content-nav a {
     padding-bottom: 18px;
     color: #212121; }
@@ -4183,7 +4215,8 @@ footer {
     padding-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    font-family: "Open Sans"; }
 
 .footer__tablet {
   display: none;
@@ -4201,7 +4234,8 @@ footer {
   -ms-flex-line-pack: stretch;
       align-content: stretch;
   overflow: hidden;
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: "Open Sans"; }
   .footer__tablet-columns {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4239,12 +4273,15 @@ footer {
     top: 77px; }
   .footer__tablet-columns-1-about-info {
     padding-bottom: 28px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-family: "Open Sans"; }
   .footer__tablet-columns-1-about-phone {
-    padding-bottom: 23px; }
+    padding-bottom: 23px;
+    font-family: "Open Sans"; }
   .footer__tablet-columns-1-about-number {
     padding-bottom: 52px;
-    font-size: 24px; }
+    font-size: 24px;
+    font-family: "Open Sans"; }
   .footer__tablet-columns-1-location2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4252,10 +4289,12 @@ footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    font-weight: bold; }
     .footer__tablet-columns-1-location2 a {
       color: #000a11;
-      padding-bottom: 18px; }
+      padding-bottom: 18px;
+      font-family: "Open Sans"; }
   .footer__tablet-columns-2-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4267,7 +4306,8 @@ footer {
     padding-bottom: 60px; }
     .footer__tablet-columns-2-nav a {
       color: #212121;
-      padding-bottom: 18px; }
+      padding-bottom: 18px;
+      font-family: "Open Sans"; }
   .footer__tablet-columns-2-location1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4275,10 +4315,12 @@ footer {
             flex-direction: column;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    font-weight: bold; }
     .footer__tablet-columns-2-location1 a {
       color: #000a11;
-      padding-bottom: 18px; }
+      padding-bottom: 18px;
+      font-family: "Open Sans"; }
   .footer__tablet-links-circle {
     position: absolute;
     top: -6px;
@@ -4286,7 +4328,8 @@ footer {
   .footer__tablet-links a {
     padding-bottom: 30px;
     color: #212121;
-    position: relative; }
+    position: relative;
+    font-family: "Open Sans"; }
 
 .footer__mobile {
   position: relative;
@@ -4302,14 +4345,17 @@ footer {
     top: 51px; }
   .footer__mobile-info {
     padding-bottom: 33px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-family: "Open Sans"; }
   .footer__mobile-phone {
     padding-top: 130px;
-    padding-bottom: 23px; }
+    padding-bottom: 23px;
+    font-family: "Open Sans"; }
   .footer__mobile-number {
     font-size: 24px;
     padding-bottom: 28px;
-    color: #212121; }
+    color: #212121;
+    font-family: "Open Sans"; }
   .footer__mobile-locations {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4333,7 +4379,8 @@ footer {
       .footer__mobile-locations-1 a, .footer__mobile-locations-2 a {
         color: #000a11;
         font-size: 12px;
-        padding-bottom: 22px; }
+        padding-bottom: 22px;
+        font-family: "Open Sans"; }
   .footer__mobile-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4363,6 +4410,10 @@ footer {
           justify-content: center;
   padding-top: 29px;
   padding-bottom: 30px; }
+
+.social-network {
+  font-weight: bold;
+  font-family: "Open Sans"; }
 
 @media (max-width: 1100px) {
   footer {
@@ -4401,7 +4452,7 @@ footer {
   display: none;
   background-color: white;
   top: 300px;
-  font-family: "MyriadProRegular"; }
+  font-family: "Open Sans"; }
   .popup__bg {
     position: absolute;
     background: black;
@@ -4483,6 +4534,9 @@ footer {
         border: none;
         background: #25aae1;
         color: white; }
+
+.info-popup * {
+  font-family: "Open Sans"; }
 
 .info-popup {
   -webkit-transition: .4s;
@@ -4713,7 +4767,7 @@ footer {
     margin-right: auto;
     margin-left: auto;
     padding-top: 92px;
-    font-family: "MyriadProSemiBold";
+    font-family: "Open Sans";
     padding-bottom: 60px; }
   .trends__wrapper {
     max-width: 1400px;
@@ -4746,7 +4800,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column; }
   .trends__first-level-nav-text {
-    font-family: "MyriadProBold";
+    font-family: "Open Sans";
     color: white;
     font-size: 16px;
     line-height: 1.5;
@@ -4804,10 +4858,10 @@ footer {
     .trends__content-right-info {
       border-bottom: 1px solid #f4f4f6; }
       .trends__content-right-info p, .trends__content-right-info h4 {
-        font-family: "MyriadProBold";
+        font-family: "Open Sans";
         padding-left: 27px; }
       .trends__content-right-info li {
-        font-family: "MyriadProRegular";
+        font-family: "Open Sans";
         list-style-type: none;
         padding-left: 40px;
         padding-bottom: 25px;
@@ -4825,13 +4879,13 @@ footer {
         padding-bottom: 60px; }
     .trends__content-right-price span {
       font-size: 30px;
-      font-family: "MyriadProBold";
+      font-family: "Open Sans";
       color: #25aae1; }
     .trends__content-right-price-value {
       padding-left: 40px;
       padding-bottom: 40px;
       font-size: 15px;
-      font-family: "MyriadProSemiBold"; }
+      font-family: "Open Sans"; }
     .trends__content-right-price a {
       color: #25aae1; }
     .trends__content-right-price-btn1 {
@@ -4899,7 +4953,7 @@ footer {
   padding-top: 30px;
   margin-left: 40px; }
   .trends-city__text {
-    font-family: "MyriadProBold"; }
+    font-family: "Open Sans"; }
   .trends-city__list {
     position: absolute;
     left: 50%;
@@ -4910,7 +4964,7 @@ footer {
     margin-left: -60px; }
   .trends-city__item {
     text-align: center;
-    font-family: "MyriadProRegular";
+    font-family: "Open Sans";
     font-size: 16px;
     height: 24px;
     padding-top: 4px;

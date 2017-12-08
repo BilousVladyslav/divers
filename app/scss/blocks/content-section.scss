@@ -51,10 +51,10 @@
   flex-wrap: wrap;
   .content-section__item {
     margin: 20px;
+    padding: 30px 0  30px;
   }
   .content-section__item {
-
-    .event__date {
+    .event {
 
     }
 
@@ -136,8 +136,7 @@
     .content-section__item {
       padding: 5px 7px;
       .event__date {
-        padding-top: 5px;
-        padding-bottom: 5px;
+
       }
       .event__location {
         padding-top: 0;
