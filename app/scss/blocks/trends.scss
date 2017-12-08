@@ -29,7 +29,7 @@
     margin-right: auto;
     margin-left: auto;
     padding-top: 92px;
-    font-family: "MyriadProSemiBold";
+    font-family: "Open Sans";
     padding-bottom: 60px;
   }
   &__wrapper {
@@ -54,7 +54,7 @@
     flex-direction: column;
   }
   &__first-level-nav-text {
-    font-family: "MyriadProBold";
+    font-family: "Open Sans";
     color: white;
     font-size: 16px;
     line-height: 1.5;
@@ -121,11 +121,11 @@
     &-info {
       border-bottom: 1px solid #f4f4f6;
       & p, & h4{
-        font-family: "MyriadProBold";
+        font-family: "Open Sans";
         padding-left: 27px;
       }
       & li{
-        font-family: "MyriadProRegular";
+        font-family: "Open Sans";
         list-style-type: none;
         padding-left: 40px;
         padding-bottom: 25px;
@@ -147,14 +147,14 @@
     &-price{
       & span{
         font-size: 30px;
-        font-family: "MyriadProBold";
+        font-family: "Open Sans";
         color: #25aae1;
       }
       &-value{
         padding-left: 40px;
         padding-bottom: 40px;
         font-size: 15px;
-        font-family: "MyriadProSemiBold";
+        font-family: "Open Sans";
       }
       & a {color: #25aae1;}
       &-btn1{
@@ -226,7 +226,7 @@
   padding-top: 30px;
   margin-left: 40px;
   &__text {
-    font-family: "MyriadProBold";
+    font-family: "Open Sans";
   }
   &__list {
     position: absolute;
@@ -239,7 +239,7 @@
   }
   &__item {
     text-align: center;
-    font-family: "MyriadProRegular";
+    font-family: "Open Sans";
     font-size: 16px;
     height: 24px;
     padding-top: 4px;

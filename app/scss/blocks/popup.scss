@@ -1,10 +1,11 @@
+
 .popup{
   position: fixed;
   justify-content: center;
   display: none;
   background-color: white;
   top: 300px;
-  font-family: "MyriadProRegular";
+  font-family: "Open Sans";
   &__bg{
     position: absolute;
     background: black;
@@ -89,7 +90,9 @@
   }
 }
 
-
+.info-popup *{
+  font-family: "Open Sans";
+}
 
 .info-popup {
   transition: .4s;
