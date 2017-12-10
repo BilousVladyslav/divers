@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header>
+    <input type="checkbox" id="header__menu" hidden>
+    <label href="#" id="touch-menu" for="header__menu"><img class="logo__tablet-menu" src="/img/menu/logo.svg"><p class="header__number">+380 (063) 575 20 20</p></label>
+    <label class="header__label" for="header__menu">
+        <svg  class="header__label_passive" width="16px" height="12px">
+            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                  d="M0.000,12.000 L0.000,10.000 L16.000,10.000 L16.000,12.000 L0.000,12.000 ZM0.000,-0.000 L16.000,-0.000 L16.000,2.000 L0.000,2.000 L0.000,-0.000 ZM11.000,7.000 L0.000,7.000 L0.000,5.000 L11.000,5.000 L11.000,7.000 Z"/>
+        </svg>
+        <svg class="header__label_active" width="14px" height="14px">
+            <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+                  d="M13.473,11.950 L12.059,13.364 L7.109,8.414 L2.159,13.364 L0.745,11.950 L5.695,7.000 L0.745,2.050 L2.159,0.636 L7.109,5.586 L12.059,0.636 L13.473,2.050 L8.523,7.000 L13.473,11.950 Z"/>
+        </svg>
+    </label>
+    <ul class="header__items" id="header__nav">
+        <div class="header__settings-burger">
+            <div class="header__burger-lang">
+                <input type="radio" name="lang" id="burger__rus" hidden checked>
+                <label class="burger__lang-rus" for="burger__rus"> РУС </label>
+                <input type="radio" name="lang" id="burger__eng" hidden>
+                <label class="burger__lang-eng" for="burger__eng"> ENG </label>
+                <input type="radio" name="lang" id="burger__ukr" hidden>
+                <label class="burger__lang-ukr" for="burger__ukr"> УКР </label>
+            </div>
+            <div class="header__burger">
+                <input type="checkbox" id="controller" hidden>
+                <label class="header__burger-text" for="controller">Выбрать город</label>
+                <ul class="header__burger-list">
+                    <a href="/"> ВСЕ ГОРОДА </a>
+                    <a href="/"> КИЕВ </a>
+                    <a href="/"> ХАРЬКОВ </a>
+                    <a href="/"> ОДЕССА </a>
+                    <a href="/"> ДНЕПР </a>
+                </ul>
+            </div>
+        </div>
+        <a class="header__items-item" href="#"> Курсы </a>
+        <a class="header__items-item" href="#"> Подарочные сертификаты </a>
+        <a class="header__items-item" href="#"> Инструктора </a>
+        <a class="header__items-item" href="#"> Блог </a>
+        <a class="header__items-item" href="#"> Путешествия </a>
+        <a class="header__items-item" href="#"> Контакты </a>
+        <a class="header__items-item" href="#"> О школе </a>
+        <div class="header__items-mobile">
+            <p class="header__items-mobile-phone"> Телефон для справок и записи </p>
+            <p class="header__items-mobile-number"> +380 (063) 575 20 20 </p>
+        </div>
+        <div class="drop-down header__city">
+            <input type="checkbox" class="drop-down__controller" hidden>
+            <p class="drop-down__text header__city-text">
+                Выбрать город
+                <svg width="9px" height="6px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M8.035,1.499 L4.500,5.035 L0.964,1.499 L1.671,0.792 L4.500,3.620 L7.328,0.792 L8.035,1.499 Z"/>
+                </svg>
+            </p>
+            <input class="drop-down__input" type="hidden" name="">
+            <ul class="drop-down__list header__city-list">
+                <a href="/" class="drop-down__item header__city-item">Все города</a>
+                <a href="/" class="drop-down__item header__city-item">Киев</a>
+                <a href="/" class="drop-down__item header__city-item">Харьков</a>
+                <a href="/" class="drop-down__item header__city-item">Одесса</a>
+                <a href="/" class="drop-down__item header__city-item">Днепр</a>
+            </ul>
+        </div>
+        <div class="drop-down header__lang">
+            <input type="checkbox" class="drop-down__controller" hidden>
+            <p class="drop-down__text header__lang-text">
+                РУС
+                <svg width="9px" height="6px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M8.035,1.499 L4.500,5.035 L0.964,1.499 L1.671,0.792 L4.500,3.620 L7.328,0.792 L8.035,1.499 Z"/>
+                </svg>
+            </p>
+            <input class="drop-down__input" type="hidden" name="">
+            <ul class="drop-down__list header__lang-list">
+                <a href="/" class="drop-down__item header__lang-item"> Eng </a>
+                <a href="/" class="drop-down__item header__lang-item"> Укр </a>
+            </ul>
+        </div>
+        <div class="header__items-number"> +380 (063) 575 20 20 </div>
+    </ul>
+</header>
+<main>
+    <section class="items-grid" style="background-color: #FAFAFC">
+            <div class="items-grid__top-wrapper">
+                <a class="items-grid__back" href="./index.html">На главную</a>
+                <h2 class="items-grid__title">Ближайшие выезды и мероприятия</h2>
+            </div>
+            <div class="items-grid__wrapper">
+                <div class="items-grid__item event" style="background-image: url('./img/content-section/events/first.jpg')">
+                    <div class="event__overflow"></div>
+                    <p class="event__date">31 Июля</p>
+                    <p class="event__location">Египет</p>
+                    <p class="event__text">Отправляемся в Египет<br> на дайвинг-тур с командой<br> Divers.</p>
+                </div>
+                <div class="items-grid__item event" style="background-image: url('./img/content-section/events/second.jpg')">
+                    <div class="event__overflow"></div>
+                    <p class="event__date">2 Августа</p>
+                    <p class="event__location">Кипр</p>
+                    <p class="event__text">Дайвинг-тур для<br> начинающих Дайверов<br> без опыта погружений</p>
+                </div>
+                <div class="items-grid__item event" style="background-image: url('./img/content-section/events/third.jpg')">
+                    <div class="event__overflow"></div>
+                    <p class="event__date">17 Февраля</p>
+                    <p class="event__location">Мальдивы</p>
+                    <p class="event__text">Дайвинг сафари на<br> Мальдивы, только для<br> профессионалов</p>
+                </div>
+                <div class="items-grid__item event" style="background-image: url('./img/content-section/events/first.jpg')">
+                    <div class="event__overflow"></div>
+                    <p class="event__date">31 Июля</p>
+                    <p class="event__location">Египет</p>
+                    <p class="event__text">Отправляемся в Египет<br> на дайвинг-тур с командой<br> Divers.</p>
+                </div>
+                <div class="items-grid__item event" style="background-image: url('./img/content-section/events/second.jpg')">
+                    <div class="event__overflow"></div>
+                    <p class="event__date">2 Августа</p>
+                    <p class="event__location">Кипр</p>
+                    <p class="event__text">Дайвинг-тур для<br> начинающих Дайверов<br> без опыта погружений</p>
+                </div>
+                <div class="items-grid__item event" style="background-image: url('./img/content-section/events/third.jpg')">
+                    <div class="event__overflow"></div>
+                    <p class="event__date">17 Февраля</p>
+                    <p class="event__location">Мальдивы</p>
+                    <p class="event__text">Дайвинг сафари на<br> Мальдивы, только для<br> профессионалов</p>
+                </div>
+                <div class="items-grid__item event" style="background-image: url('./img/content-section/events/first.jpg')">
+                    <div class="event__overflow"></div>
+                    <p class="event__date">31 Июля</p>
+                    <p class="event__location">Египет</p>
+                    <p class="event__text">Отправляемся в Египет<br> на дайвинг-тур с командой<br> Divers.</p>
+                </div>
+                <div class="items-grid__item event" style="background-image: url('./img/content-section/events/second.jpg')">
+                    <div class="event__overflow"></div>
+                    <p class="event__date">2 Августа</p>
+                    <p class="event__location">Кипр</p>
+                    <p class="event__text">Дайвинг-тур для<br> начинающих Дайверов<br> без опыта погружений</p>
+                </div>
+                <div class="items-grid__item event" style="background-image: url('./img/content-section/events/third.jpg')">
+                    <div class="event__overflow"></div>
+                    <p class="event__date">17 Февраля</p>
+                    <p class="event__location">Мальдивы</p>
+                    <p class="event__text">Дайвинг сафари на<br> Мальдивы, только для<br> профессионалов</p>
+                </div>
+            </div>
+        <div class="paginator">
+            <a class="paginator__page paginator__page_active" href="#">1</a>
+            <a class="paginator__page" href="#">2</a>
+            <a class="paginator__page" href="#">3</a>
+            <a class="paginator__page" href="#">4</a>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer__desktop">
+        <div class="footer__desktop-content">
+            <div class="footer__desktop-content-about">
+                <img class="footer__desktop-content-about-logo" src="img/footer/logo.svg">
+                <p class="footer__desktop-content-about-info">
+                    Главная цель дайвцентра DIVERS открыть Вам <br>
+                    подводный мир, поделиться знаниями и<br>
+                    навыками. Потом захватить Украину, Европу,<br>
+                    потом весь мир и затопить его,  тогда всем<br>
+                    людям нужно будет освоить дайвинг.
+                </p>
+                <p class="footer__desktop-content-about-phone">
+                    Телефон для справок и записи
+                </p>
+                <p class="footer__desktop-content-about-number">
+                    +38 (063) 575 20 20
+                </p>
+            </div>
+            <div class="footer__desktop-content-nav">
+                <a href="#"> Курсы </a>
+                <a href="#"> Сертификаты </a>
+                <a href="#"> Инструктора </a>
+                <a href="#"> Блог </a>
+                <a href="#"> Путешествия </a>
+                <a href="#"> Контакты </a>
+                <a href="#"> О школе </a>
+            </div>
+            <div class="footer__desktop-content-location1">
+                <a href="#"> Дайвинг во Львове </a>
+                <a href="#"> Дайвинг в Сумах </a>
+                <a href="#"> Дайвинг в Днепре </a>
+            </div>
+            <div class="footer__desktop-content-location2">
+                <a href="#"> Дайвинг в Киеве </a>
+                <a href="#"> Дайвинг в Харькове </a>
+                <a href="#"> Дайвинг в Одессе </a>
+            </div>
+            <div class="footer__desktop-content-links">
+                <a href="#" class="social-network">
+                    <svg class="footer__desktop-content-links-circle" width="30px" height="30px">
+                        <path fill-rule="evenodd"  fill="rgb(0, 166, 235)" d="M15.000,-0.000 C23.284,-0.000 30.000,6.715 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.715 6.716,-0.000 15.000,-0.000 Z"/>
+                    </svg>
+                    Instagram
+                </a>
+                <a href="#" class="social-network">
+                    <svg class="footer__desktop-content-links-circle" width="30px" height="30px">
+                        <path fill-rule="evenodd"  fill="rgb(0, 166, 235)" d="M15.000,-0.000 C23.284,-0.000 30.000,6.715 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.715 6.716,-0.000 15.000,-0.000 Z"/>
+                    </svg>
+                    Facebook
+                </a>
+                <a href="#" class="social-network">
+                    <svg class="footer__desktop-content-links-circle" width="30px" height="30px">
+                        <path fill-rule="evenodd"  fill="rgb(0, 166, 235)" d="M15.000,-0.000 C23.284,-0.000 30.000,6.715 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.715 6.716,-0.000 15.000,-0.000 Z"/>
+                    </svg>
+                    Youtube
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__tablet">
+        <div class="footer__tablet-columns">
+            <div class="footer__tablet-columns-1">
+                <img class="footer__tablet-columns-1-logo" src="img/footer/logo.svg">
+                <div class="footer__tablet-columns-1-about">
+                    <p class="footer__tablet-columns-1-about-info">
+                        Главная цель дайвцентра DIVERS<br>
+                        открыть Вам подводный мир,<br>
+                        поделиться знаниями и навыками.<br>
+                        Потом захватить Украину, Европу,<br>
+                        потом весь мир и затопить его,  тогда<br>
+                        всем людям нужно будет освоить<br>
+                        дайвинг.
+                    </p>
+                    <p class="footer__tablet-columns-1-about-phone">
+                        Телефон для справок и записи
+                    </p>
+                    <p class="footer__tablet-columns-1-about-number">
+                        +38 (063) 575 20 20
+                    </p>
+                </div>
+                <div class="footer__tablet-columns-1-location2">
+                    <a href="#"> Дайвинг в Киеве </a>
+                    <a href="#"> Дайвинг в Харькове </a>
+                    <a href="#"> Дайвинг в Одессе </a>
+                </div>
+            </div>
+            <div class="footer__tablet-columns-2">
+                <div class="footer__tablet-columns-2-nav">
+                    <a href="#"> Курсы </a>
+                    <a href="#"> Сертификаты </a>
+                    <a href="#"> Инструктора </a>
+                    <a href="#"> Блог </a>
+                    <a href="#"> Путешествия </a>
+                    <a href="#"> Контакты </a>
+                    <a href="#"> О школе </a>
+                </div>
+                <div class="footer__tablet-columns-2-location1">
+                    <a href="#"> Дайвинг во Львове </a>
+                    <a href="#"> Дайвинг в Сумах </a>
+                    <a href="#"> Дайвинг в Днепре </a>
+                </div>
+            </div>
+            <div class="footer__tablet-links">
+                <a href="#">
+                    <svg class="footer__tablet-links-circle" width="30px" height="30px">
+                        <path fill-rule="evenodd"  fill="rgb(0, 166, 235)" d="M15.000,-0.000 C23.284,-0.000 30.000,6.715 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.715 6.716,-0.000 15.000,-0.000 Z"/>
+                    </svg>
+                    Instagram
+                </a>
+                <a href="#">
+                    <svg class="footer__tablet-links-circle" width="30px" height="30px">
+                        <path fill-rule="evenodd"  fill="rgb(0, 166, 235)" d="M15.000,-0.000 C23.284,-0.000 30.000,6.715 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.715 6.716,-0.000 15.000,-0.000 Z"/>
+                    </svg>
+                    Facebook
+                </a>
+                <a href="#">
+                    <svg class="footer__tablet-links-circle" width="30px" height="30px">
+                        <path fill-rule="evenodd"  fill="rgb(0, 166, 235)" d="M15.000,-0.000 C23.284,-0.000 30.000,6.715 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.715 6.716,-0.000 15.000,-0.000 Z"/>
+                    </svg>
+                    Youtube
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__mobile">
+        <img class="footer__mobile-logo" src="img/footer/logo.svg">
+        <p class="footer__mobile-phone">
+            Телефон для справок и записи
+        </p>
+        <p class="footer__mobile-number">
+            +38 (063) 575 20 20
+        </p>
+        <p class="footer__mobile-info">
+            Главная цель дайвцентра DIVERS
+            открыть Вам подводный мир,
+            поделиться знаниями и навыками.
+            Потом захватить Украину, Европу,
+            потом весь мир и затопить его,  тогда
+            всем людям нужно будет освоить
+            дайвинг.
+        </p>
+        <div class="footer__mobile-locations">
+            <div class="footer__mobile-locations-2">
+                <a href="#"> Дайвинг в Киеве </a>
+                <a href="#"> Дайвинг в Харькове </a>
+                <a href="#"> Дайвинг в Одессе </a>
+            </div>
+            <div class="footer__mobile-locations-1">
+                <a href="#"> Дайвинг во Львове </a>
+                <a href="#"> Дайвинг в Сумах </a>
+                <a href="#"> Дайвинг в Днепре </a>
+            </div>
+        </div>
+        <div class="footer__mobile-links">
+            <a href="#">
+                <svg class="footer__mobile-links-circle" width="30px" height="30px">
+                    <path fill-rule="evenodd"  fill="rgb(0, 166, 235)" d="M15.000,-0.000 C23.284,-0.000 30.000,6.715 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.715 6.716,-0.000 15.000,-0.000 Z"/>
+                </svg>
+                Instagram
+            </a>
+            <a href="#">
+                <svg class="footer__mobile-links-circle" width="30px" height="30px">
+                    <path fill-rule="evenodd"  fill="rgb(0, 166, 235)" d="M15.000,-0.000 C23.284,-0.000 30.000,6.715 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.715 6.716,-0.000 15.000,-0.000 Z"/>
+                </svg>
+                Facebook
+            </a>
+            <a href="#">
+                <svg class="footer__mobile-links-circle" width="30px" height="30px">
+                    <path fill-rule="evenodd"  fill="rgb(0, 166, 235)" d="M15.000,-0.000 C23.284,-0.000 30.000,6.715 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.715 6.716,-0.000 15.000,-0.000 Z"/>
+                </svg>
+                Youtube
+            </a>
+        </div>
+    </div>
+    <div class="footer__copy">
+        2003-2018 TM &laquo;Divers&raquo;. Все права защищены
+    </div>
+</footer>
+<script src="./js/map.js" charset="utf-8"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqPHCgpNlZmXgnDH6XZ1zCYdRSki1d22Y&callback=initMap">
+</script>
+<script src="./libs/jquery-3.2.1.min.js"></script>
+<script src="./libs/slick/slick.min.js" charset="utf-8"></script>
+<script src="./libs/alegar-lib.js" charset="utf-8"></script>
+<script src="./js/index.js" charset="utf-8"></script>
+</body>
+</html>
