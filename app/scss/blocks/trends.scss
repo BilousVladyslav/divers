@@ -1,3 +1,6 @@
+.trends *{
+  font-family: "Open Sans";
+}
 .trends {
   background-image: url("../img/trends/bgimage.png");
   background-position: center;
@@ -167,7 +170,7 @@
         color: white;
         background-color: #25aae1;
         border-radius: 24px;
-        padding: 15px 80px;
+        padding: 15px 75px;
         margin-bottom: 24px;
         width: 270px;
         margin-left: auto;
