@@ -77,8 +77,8 @@ header {
     top: 140px;
     right: 50px;
   }
-  .no-touch &-item:hover {
-    border-bottom: 4px solid #25aae1;
+  &-item_active, .no-touch &-item:hover {
+    border-bottom: 4px solid #25aae1 !important;
     transition: 400ms;
   }
 }
