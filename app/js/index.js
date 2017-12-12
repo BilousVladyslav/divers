@@ -49,7 +49,7 @@ $("#header__menu").change(function() {
   }
 });
 
-$(".top-section__details").click(function () {
+$(".request-call__open").click(function () {
   $(".request-call").addClass("request-call_active");
   $('body').addClass("fixed");
   setTimeout(function(){
@@ -58,7 +58,7 @@ $(".top-section__details").click(function () {
 });
 
 //---------------------------------------------------------------------------
-$(".shop__shares-btn").click(function () {
+$(".info-popup__open").click(function () {
   $(".info-popup").addClass("info-popup_active");
   $('body').addClass("fixed");
   setTimeout(function(){
@@ -82,13 +82,10 @@ $(".info-popup__bg").click(function () {
   }, 300);
 });
 
-
-
-
 $(function(){
   if (!(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch)) document.body.classList.add('no-touch');
 
-  if ($(this).scrollTop() > 20){
+  if ($(window).scrollTop() > 20){
     $('header').addClass('header_active');
   } else {
     $('header').removeClass('header_active');
@@ -99,5 +96,54 @@ $(function(){
     } else {
       $('header').removeClass('header_active');
     }
+  });
+
+  // Подсветка активного пункта меню при скроле
+  $(window).scroll(function(){
+    if ($(this).scrollTop() >= $(".courses").offset().top &&
+        $(this).scrollTop() < $(".courses").offset().top + $(".courses").outerHeight()) {
+      $(".header__items-item_1").addClass("header__items-item_active");
+    } else {
+      $(".header__items-item_1").removeClass("header__items-item_active");
+    }
+
+    if ($(this).scrollTop() >= $(".trainers").offset().top &&
+        $(this).scrollTop() < $(".trainers").offset().top + $(".trainers").outerHeight()) {
+      $(".header__items-item_3").addClass("header__items-item_active");
+    } else {
+      $(".header__items-item_3").removeClass("header__items-item_active");
+    }
+
+    if ($(this).scrollTop() >= $(".insta").offset().top &&
+        $(this).scrollTop() < $(".insta").offset().top + $(".insta").outerHeight()) {
+      $(".header__items-item_4").addClass("header__items-item_active");
+    } else {
+      $(".header__items-item_4").removeClass("header__items-item_active");
+    }
+
+    if ($(this).scrollTop() >= $(".map-city").offset().top &&
+        $(this).scrollTop() < $(".map-city").offset().top + $(".insta").outerHeight()) {
+      $(".header__items-item_6").addClass("header__items-item_active");
+    } else {
+      $(".header__items-item_6").removeClass("header__items-item_active");
+    }
+  });
+
+
+  // переход к выбраному пункту меню
+  $(".header__items-item_1").click(function () {
+    $("HTML, BODY").animate({ scrollTop: $(".courses").offset().top + 1 }, 1000);
+  });
+
+  $(".header__items-item_3").click(function () {
+    $("HTML, BODY").animate({ scrollTop: $(".trainers").offset().top + 1 }, 1000);
+  });
+
+  $(".header__items-item_4").click(function () {
+    $("HTML, BODY").animate({ scrollTop: $(".insta").offset().top + 1}, 1000);
+  });
+
+  $(".header__items-item_6").click(function () {
+    $("HTML, BODY").animate({ scrollTop: $(".map-city").offset().top + 1}, 1000);
   });
 });
