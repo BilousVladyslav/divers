@@ -1606,6 +1606,10 @@ a {
     position: relative;
     width: 40%;
     padding: 0 2%; }
+    .courses__item:hover .courses__arrow {
+      margin: 0;
+      -webkit-transition: 0.6s;
+      transition: 0.6s; }
   .courses__upper-layer {
     width: 100%;
     display: block; }
@@ -1632,7 +1636,10 @@ a {
   .courses__arrow {
     color: #212121;
     width: 16px;
-    height: 14px; }
+    height: 14px;
+    margin-right: 10px;
+    -webkit-transition: 0.45s;
+    transition: 0.45s; }
 
 .insta {
   width: 100%;
