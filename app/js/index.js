@@ -6,6 +6,14 @@ if ($(".shop__items").length) {
         nextArrow: '<img class="shop__arrow shop__arrow_right" src="../img/shop/ellipse-right.png">'
     });
 }
+if ($(".shop__slick").length) {
+    $(".shop__slick").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<img class="shop__shares__arrow shop__shares__arrow_left" src="../img/shop/ellipse-left.png">',
+        nextArrow: '<img class="shop__shares__arrow shop__shares__arrow_right" src="../img/shop/ellipse-right.png">'
+    });
+}
 if ($(".top-section__slick").length) {
     $(".top-section__slick").slick({
         slidesToShow: 1,

@@ -1420,6 +1420,16 @@ a {
   overflow: hidden;
   padding: 65px 55px 100px;
   position: relative; }
+  .shop__shares__arrow {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 55px;
+    top: 290px;
+    z-index: 2;
+    cursor: pointer; }
+    .shop__shares__arrow_left {
+      right: 115px; }
 
 .shop__discount {
   font-size: 81px;
@@ -1505,6 +1515,10 @@ a {
   cursor: pointer; }
   .shop__arrow_left {
     left: 55px; }
+
+.shop__slick {
+  width: 600px;
+  height: 360px; }
 
 .trainers {
   padding-bottom: 120px; }
@@ -4143,6 +4157,8 @@ footer {
     .shop__shares {
       width: calc(50% - 25px);
       padding: 60px 25px 100px; }
+    .shop__slick {
+      width: calc(50% - 25px); }
     .shop__shares-btn {
       left: 25px;
       padding: 0 10px; }
@@ -4162,6 +4178,13 @@ footer {
       .shop__arrow_right {
         left: 80px; } }
 
+@media (max-width: 800px) {
+  .shop__shares__arrow {
+    top: 327px;
+    right: 50px; }
+    .shop__shares__arrow_left {
+      left: 50px; } }
+
 @media (max-width: 650px) {
   .shop {
     padding: 0; }
@@ -4175,12 +4198,24 @@ footer {
     .shop__shares {
       width: 100%;
       margin-bottom: 50px; }
+      .shop__shares__arrow {
+        top: 290px;
+        left: calc(100% - 35px); }
+        .shop__shares__arrow_left {
+          left: calc(100% - 80px); }
+    .shop__slick {
+      width: 100%;
+      margin-bottom: 50px; }
     .shop__items {
       width: 100%; } }
 
 @media (max-width: 400px) {
   .shop__wrapper {
-    padding: 0 15px; } }
+    padding: 0 15px; }
+  .shop__shares__arrow {
+    right: 30px; }
+    .shop__shares__arrow_left {
+      right: 80px; } }
 
 @media (max-width: 1100px) {
   .trainers {
