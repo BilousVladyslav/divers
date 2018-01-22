@@ -170,4 +170,7 @@ $(function(){
   $(".header__items-item_6").click(function () {
     $("HTML, BODY").animate({ scrollTop: $(".map-city").offset().top + 1}, 1000);
   });
+  $(".courses__item").click(function () {
+      $("HTML, BODY").animate({ scrollTop: $(".trends").offset().top + 1}, 1000);
+  });
 });
