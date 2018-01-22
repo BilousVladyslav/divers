@@ -30,6 +30,14 @@ if (document.body.clientWidth<1100){
             arrows: false,
     });
 }}
+if ($(".trends__slick").length) {
+    $(".trends__slick").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<img class="trends__arrow trends__arrow_left" src="../img/shop/ellipse-left.png">',
+        nextArrow: '<img class="trends__arrow trends__arrow_right" src="../img/shop/ellipse-right.png">'
+    });
+}
 if (document.body.clientWidth<1100){
     if ($(".content-section__wrapper").length) {
         $(".content-section__wrapper").slick({
