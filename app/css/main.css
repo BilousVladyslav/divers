@@ -1547,9 +1547,14 @@ a {
     width: 100%;
     padding: 0 55px;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto; }
 
 .trainer-card {
+  position: center;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 15px;
   overflow: hidden;
   width: calc(25% - 35px);
