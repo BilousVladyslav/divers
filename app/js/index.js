@@ -6,6 +6,22 @@ if ($(".shop__items").length) {
         nextArrow: '<img class="shop__arrow shop__arrow_right" src="../img/shop/ellipse-right.png">'
     });
 }
+if ($(".shop__slick").length) {
+    $(".shop__slick").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<img class="shop__shares__arrow shop__shares__arrow_left" src="../img/shop/ellipse-left.png">',
+        nextArrow: '<img class="shop__shares__arrow shop__shares__arrow_right" src="../img/shop/ellipse-right.png">'
+    });
+}
+if ($(".top-section__slick").length) {
+    $(".top-section__slick").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<img class="top-section__arrow top-section__arrow_left" src="../img/shop/ellipse-left.png">',
+        nextArrow: '<img class="top-section__arrow top-section__arrow_right" src="../img/shop/ellipse-right.png">'
+    });
+}
 if (document.body.clientWidth<1100){
     if ($(".trainers__wrapper").length) {
         $(".trainers__wrapper").slick({
@@ -14,6 +30,14 @@ if (document.body.clientWidth<1100){
             arrows: false,
     });
 }}
+if ($(".trends__slick").length) {
+    $(".trends__slick").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<img class="trends__arrow trends__arrow_left" src="../img/shop/ellipse-left.png">',
+        nextArrow: '<img class="trends__arrow trends__arrow_right" src="../img/shop/ellipse-right.png">'
+    });
+}
 if (document.body.clientWidth<1100){
     if ($(".content-section__wrapper").length) {
         $(".content-section__wrapper").slick({
@@ -145,5 +169,8 @@ $(function(){
 
   $(".header__items-item_6").click(function () {
     $("HTML, BODY").animate({ scrollTop: $(".map-city").offset().top + 1}, 1000);
+  });
+  $(".courses__item").click(function () {
+      $("HTML, BODY").animate({ scrollTop: $(".trends").offset().top + 1}, 1000);
   });
 });

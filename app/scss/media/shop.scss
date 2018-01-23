@@ -8,6 +8,9 @@
       width: calc(50% - 25px);
       padding: 60px 25px 100px;
     }
+    &__slick{
+      width: calc(50% - 25px);
+    }
     &__shares-btn {
       left: 25px;
       padding: 0 10px;
@@ -36,6 +39,16 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .shop__shares__arrow{
+    top: 327px;
+    right: 50px;
+    &_left{
+      left: 50px;
+    }
+  }
+}
 @media (max-width: 650px) {
   .shop {
     padding: 0;
@@ -47,6 +60,17 @@
     &__shares {
       width: 100%;
       margin-bottom: 50px;
+      &__arrow{
+        top: 290px;
+        left: calc(100% - 35px);
+        &_left{
+          left: calc(100% - 80px);
+        }
+      }
+    }
+    &__slick{
+      width: 100%;
+      margin-bottom: 50px;
     }
     &__items {
       width: 100%;
@@ -54,7 +78,15 @@
   }
 }
 @media (max-width: 400px) {
-    .shop__wrapper {
-      padding: 0 15px;
+    .shop {
+      &__wrapper {
+        padding: 0 15px;
+      }
+      &__shares__arrow{
+        right: 30px;
+        &_left{
+          right: 80px;
+        }
+      }
     }
 }

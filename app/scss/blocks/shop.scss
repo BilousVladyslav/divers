@@ -17,6 +17,18 @@
     overflow: hidden;
     padding: 65px 55px 100px;
     position: relative;
+    &__arrow {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      right: 55px;
+      top: 290px;
+      z-index: 2;
+      cursor: pointer;
+      &_left {
+        right: 115px;
+      }
+    }
   }
   &__discount {
     font-size: 81px;
@@ -103,6 +115,10 @@
     &_left {
       left: 55px;
     }
+  }
+  &__slick{
+    width: 600px;
+    height: 360px;
   }
 }
 
