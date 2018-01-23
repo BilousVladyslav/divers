@@ -47,6 +47,7 @@ if (document.body.clientWidth<1100){
         });
     }
 }
+
 $(".request-call__close").click(function () {
   var t = this;
   $(this).parents(".request-call").removeClass("request-call_active-show");
@@ -173,4 +174,9 @@ $(function(){
   $(".courses__item").click(function () {
       $("HTML, BODY").animate({ scrollTop: $(".trends").offset().top + 1}, 1000);
   });
+});
+$(".trends__second-level-nav-text").click(function () {
+    $('.trends__slick').slick('refresh');
+});$(".trends__second-level-nav-text").click(function () {
+    $('.trends__slick').slick('refresh');
 });
