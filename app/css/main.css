@@ -1408,7 +1408,7 @@ a {
           justify-content: space-between;
   width: 1030px;
   margin: 0 auto;
-  padding-bottom: 10px; }
+  padding-bottom: 80px; }
 
 .shop__shares {
   width: 600px;
@@ -1616,7 +1616,7 @@ a {
           justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 300px 100px;
+  padding: 0 300px 120px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
@@ -1659,6 +1659,45 @@ a {
     margin-right: 10px;
     -webkit-transition: 0.45s;
     transition: 0.45s; }
+
+.insta {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #4ccef6; }
+  .insta__tablet-text {
+    width: 100%;
+    font-size: 36px;
+    font-family: "Open Sans";
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: none; }
+  .insta__ad {
+    width: 20%;
+    height: 19.85vw; }
+  .insta__text {
+    font-size: 1.3vw;
+    font-family: "Open Sans";
+    color: #212121;
+    line-height: 1.5;
+    padding-left: 10%;
+    padding-top: 15%; }
+  .insta__link {
+    font-size: 1.2vw;
+    font-family: "Open Sans";
+    color: #212121;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 10%;
+    padding-top: 8%; }
+  .insta__photo {
+    height: 50%;
+    width: 20%;
+    display: block; }
 
 .content-section {
   display: block;
@@ -2511,7 +2550,7 @@ header {
   -webkit-transition: .4s;
   transition: .4s;
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   position: absolute;
   top: 140px;
   right: 50px; }
@@ -3241,13 +3280,9 @@ footer {
       padding-top: 50px;
       padding-bottom: 23px;
       width: 700px; }
-    .popup__content-mediacontent {
-      padding-top: 67px;
+    .popup__content-img2, .popup__content-img3 {
       padding-bottom: 28px;
-      height: 675px; }
-    .popup__content-img3 {
-      padding-top: 67px;
-      padding-bottom: 28px; }
+      padding-top: 67px; }
     .popup__content-contacts {
       padding-top: 0; }
     .popup__content-more {
@@ -3350,11 +3385,7 @@ footer {
       padding-top: 50px;
       padding-bottom: 23px;
       width: 700px; }
-    .info-popup__content-mediacontent {
-      padding-top: 67px;
-      padding-bottom: 28px;
-      height: 675px; }
-    .info-popup__content-img3 {
+    .info-popup__content-img2, .info-popup__content-img3 {
       padding-bottom: 28px;
       padding-top: 67px; }
     .info-popup__content-contacts {
@@ -3443,9 +3474,7 @@ footer {
 
 @media (max-width: 1050px) {
   .info-popup__content {
-    width: 800px; }
-    .info-popup__content-mediacontent {
-      height: 600px; } }
+    width: 800px; } }
 
 @media (max-width: 900px) {
   .info-popup__content {
@@ -3459,8 +3488,6 @@ footer {
       padding-left: 15px;
       padding-right: 20px;
       width: 515px; }
-    .info-popup__content-mediacontent {
-      height: 390px; }
   .info-popup__close {
     display: none; } }
 
@@ -3474,9 +3501,7 @@ footer {
       display: -ms-flexbox;
       display: flex; }
     .info-popup__content-info {
-      display: none; }
-    .info-popup__content-mediacontent {
-      height: 280px; } }
+      display: none; } }
 
 .trends * {
   font-family: "Open Sans"; }
@@ -4285,24 +4310,15 @@ footer {
 
 @media (max-width: 1700px) {
   .courses {
-    padding-top: 40px;
-    padding-bottom: 100px;
-    padding-left: 200px;
-    padding-right: 200px; } }
+    padding: 120px 200px; } }
 
 @media (max-width: 1500px) {
   .courses {
-    padding-top: 30px;
-    padding-bottom: 100px;
-    padding-left: 100px;
-    padding-right: 100px; } }
+    padding: 120px 100px; } }
 
 @media (max-width: 1300px) {
   .courses {
-    padding-top: 30px;
-    padding-bottom: 100px;
-    padding-left: 0;
-    padding-right: 0; } }
+    padding: 100px 0; } }
 
 @media (max-width: 1100px) {
   .courses__text {
@@ -4332,6 +4348,39 @@ footer {
               align-items: center; }
     .courses__text {
       font-size: 16px; } }
+
+@media (max-width: 1650px) {
+  .insta__ad {
+    height: 19.75vw; } }
+
+@media (max-width: 1250px) {
+  .insta__ad {
+    height: 19.7vw; } }
+
+@media (max-width: 1100px) {
+  .insta {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 500px; }
+    .insta__tablet-text {
+      display: block;
+      width: auto; }
+    .insta__ad {
+      display: none; }
+    .insta__photo {
+      display: none; } }
+
+@media (max-width: 800px) {
+  .insta {
+    height: 450px; } }
+
+@media (max-width: 400px) {
+  .insta {
+    height: 300px; } }
 
 @media (max-width: 1700px) {
   .content-section__global-wrapper {
@@ -4945,13 +4994,9 @@ footer {
       padding-top: 50px;
       padding-bottom: 23px;
       width: 700px; }
-    .popup__content-mediacontent {
-      padding-top: 67px;
+    .popup__content-img2, .popup__content-img3 {
       padding-bottom: 28px;
-      height: 675px; }
-    .popup__content-img3 {
-      padding-top: 67px;
-      padding-bottom: 28px; }
+      padding-top: 67px; }
     .popup__content-contacts {
       padding-top: 0; }
     .popup__content-more {
@@ -5054,11 +5099,7 @@ footer {
       padding-top: 50px;
       padding-bottom: 23px;
       width: 700px; }
-    .info-popup__content-mediacontent {
-      padding-top: 67px;
-      padding-bottom: 28px;
-      height: 675px; }
-    .info-popup__content-img3 {
+    .info-popup__content-img2, .info-popup__content-img3 {
       padding-bottom: 28px;
       padding-top: 67px; }
     .info-popup__content-contacts {
@@ -5147,9 +5188,7 @@ footer {
 
 @media (max-width: 1050px) {
   .info-popup__content {
-    width: 800px; }
-    .info-popup__content-mediacontent {
-      height: 600px; } }
+    width: 800px; } }
 
 @media (max-width: 900px) {
   .info-popup__content {
@@ -5163,8 +5202,6 @@ footer {
       padding-left: 15px;
       padding-right: 20px;
       width: 515px; }
-    .info-popup__content-mediacontent {
-      height: 390px; }
   .info-popup__close {
     display: none; } }
 
@@ -5178,9 +5215,7 @@ footer {
       display: -ms-flexbox;
       display: flex; }
     .info-popup__content-info {
-      display: none; }
-    .info-popup__content-mediacontent {
-      height: 280px; } }
+      display: none; } }
 
 .trends * {
   font-family: "Open Sans"; }
