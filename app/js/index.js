@@ -85,7 +85,7 @@ $(".request-call__open").click(function () {
 //---------------------------------------------------------------------------
 $(".info-popup__open").click(function () {
   $(".info-popup").addClass("info-popup_active");
-  $('body').addClass("fixed");
+  $('body').css("overflow", "hidden");
   setTimeout(function(){
     $(".info-popup").addClass("info-popup_active-show");
   }, 1);
@@ -93,7 +93,7 @@ $(".info-popup__open").click(function () {
 $(".info-popup__close").click(function () {
   var t = this;
   $(this).parents(".info-popup").removeClass("info-popup_active-show");
-  $('body').removeClass("fixed");
+  $('body').css("overflow", "visible");
   setTimeout(function(){
     $(t).parents(".info-popup").removeClass("info-popup_active");
   }, 300);
@@ -101,7 +101,7 @@ $(".info-popup__close").click(function () {
 $(".info-popup__bg").click(function () {
   var t = this;
   $(this).parents(".info-popup").removeClass("info-popup_active-show");
-  $('body').removeClass("fixed");
+  $('body').css("overflow", "visible");
   setTimeout(function(){
     $(t).parents(".info-popup").removeClass("info-popup_active");
   }, 300);
