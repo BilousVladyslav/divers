@@ -25,14 +25,17 @@
     </label>
     <ul class="header__items" id="header__nav">
       <div class="header__settings-burger">
-        <div class="header__burger-lang">
-          <input type="radio" name="lang" id="burger__rus" hidden checked>
-          <label class="burger__lang-rus" for="burger__rus"> РУС </label>
-          <input type="radio" name="lang" id="burger__eng" hidden>
-          <label class="burger__lang-eng" for="burger__eng"> ENG </label>
-          <input type="radio" name="lang" id="burger__ukr" hidden>
-          <label class="burger__lang-ukr" for="burger__ukr"> УКР </label>
-        </div>
+        <ul class="header__burger-lang">
+          <li class="burger__lang-current"> РУС </li>
+          <li class="burger__lang"> ENG </li>
+          <li class="burger__lang"> УКР </li>
+          <!-- <input type="radio" name="lang" id="burger__rus" hidden checked>
+               <label class="burger__lang-rus" for="burger__rus"> РУС </label>
+               <input type="radio" name="lang" id="burger__eng" hidden>
+               <label class="burger__lang-eng" for="burger__eng"> ENG </label>
+               <input type="radio" name="lang" id="burger__ukr" hidden>
+               <label class="burger__lang-ukr" for="burger__ukr"> УКР </label>         -->
+        </ul>
         <div class="header__burger">
           <input type="checkbox" id="controller" hidden>
           <label class="header__burger-text" for="controller">Выбрать город</label>
