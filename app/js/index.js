@@ -22,14 +22,17 @@ if ($(".top-section__slick").length) {
         nextArrow: '<img class="top-section__arrow top-section__arrow_right" src="../img/shop/ellipse-right.png">'
     });
 }
-if (document.body.clientWidth<1100){
+/*if (document.body.clientWidth<1100){
     if ($(".trainers__wrapper").length) {
         $(".trainers__wrapper").slick({
             slidesToShow: 2,
             slidesToScroll: 1,
             arrows: false,
     });
-}}
+}}*/
+$(".content").mCustomScrollbar({
+    axis:"x"
+});
 if ($(".trends__slick").length) {
     $(".trends__slick").slick({
         slidesToShow: 1,
