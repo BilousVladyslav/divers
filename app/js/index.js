@@ -156,25 +156,31 @@ $(function(){
 
 
   // переход к выбраному пункту меню
-  $(".header__items-item_1").click(function () {
-    $("HTML, BODY").animate({ scrollTop: $(".courses").offset().top + 1 }, 1000);
-  });
-
-  $(".header__items-item_3").click(function () {
-    $("HTML, BODY").animate({ scrollTop: $(".trainers").offset().top + 1 }, 1000);
-  });
-
-  $(".header__items-item_4").click(function () {
-    $("HTML, BODY").animate({ scrollTop: $(".insta").offset().top + 1}, 1000);
-  });
-
-  $(".header__items-item_6").click(function () {
-    $("HTML, BODY").animate({ scrollTop: $(".map-city").offset().top + 1}, 1000);
-  });
   $(".courses__item").click(function () {
       $("HTML, BODY").animate({ scrollTop: $(".trends").offset().top + 1}, 1000);
   });
 });
+$(document).ready(function(){
+    $("#header__nav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+    $("#footer__nav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+    $("#footer__tablet-nav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+
 $(".trends__second-level-nav-text").click(function () {
     $('.trends__slick').slick('refresh');
 });$(".trends__second-level-nav-text").click(function () {
