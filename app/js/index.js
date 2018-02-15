@@ -28,8 +28,9 @@ if (document.body.clientWidth<1100){
             slidesToShow: 2,
             slidesToScroll: 1,
             arrows: false,
-    });
-}}
+        });
+    }
+}
 if ($(".trends__slick").length) {
     $(".trends__slick").slick({
         slidesToShow: 1,
