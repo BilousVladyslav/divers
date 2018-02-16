@@ -8,6 +8,7 @@
     <title></title>
     <link rel="stylesheet" href="./css/main.css">
     <link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="libs/scrollbar/jquery.mCustomScrollbar.css" />
   </head>
   <body>
   <header>
@@ -261,7 +262,7 @@
               <div class="trends__second-level-nav">
                 <input id="trends__second-level_1-1" type="radio" name="trends-second-level_1" class="trends__second-level_controller trends__second-level_controller_1" checked hidden>
                 <label class="trends__second-level-nav-text trends__second-level-nav-text_1" for="trends__second-level_1-1"> Ознакомительное погружение </label>
-                <div class="trends__content trends__content_1">
+                <div class="trends__content trends__content_1 mCustomScrollbar" data-mcs-theme="dark">
                   <div class="trends__content-left">
                     <div class="trends__img">
                       <img class="trends__img" src="img/trends/info.png">
@@ -1046,7 +1047,7 @@
               инструкторами PADI. Имеют многолетний опыт погружений во всех<br>
               уголках света в самых разных условиях.
             </p>
-        <div class="trainers__wrapper">
+        <div class="trainers__wrapper" data-mcs-theme="dark" data-mcs-axis="x">
           <div class="trainer-card">
             <div class="trainer-card__img-wrapper">
               <div class="trainer-card__overflow">
@@ -1584,5 +1585,6 @@
     <script src="./libs/slick/slick.min.js" charset="utf-8"></script>
     <script src="./libs/alegar-lib.js" charset="utf-8"></script>
     <script src="./js/index.js" charset="utf-8"></script>
+    <script src="libs/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
   </body>
 </html>
