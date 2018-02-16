@@ -30,9 +30,6 @@ if ($(".top-section__slick").length) {
             arrows: false,
     });
 }}*/
-$(".content").mCustomScrollbar({
-    axis:"x"
-});
 if ($(".trends__slick").length) {
     $(".trends__slick").slick({
         slidesToShow: 1,
@@ -140,13 +137,6 @@ $(function(){
       $(".header__items-item_3").addClass("header__items-item_active");
     } else {
       $(".header__items-item_3").removeClass("header__items-item_active");
-    }
-
-    if ($(this).scrollTop() >= $(".insta").offset().top &&
-        $(this).scrollTop() < $(".insta").offset().top + $(".insta").outerHeight()) {
-      $(".header__items-item_4").addClass("header__items-item_active");
-    } else {
-      $(".header__items-item_4").removeClass("header__items-item_active");
     }
 
     if ($(this).scrollTop() >= $(".map-city").offset().top &&

@@ -1989,13 +1989,14 @@ a {
     top: 0;
     bottom: 0;
     width: calc(100% - 325px); }
+  .trends__content-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .trends__content-left {
     background: #FFFFFF;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 325px;
+    width: calc(100% - 325px);
     /* & img{
       width: 100%;
       padding: 0;
@@ -2022,10 +2023,6 @@ a {
       font-weight: bold; }
   .trends__content-right {
     background: #fafafc;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
     width: 325px; }
     .trends__content-right-info {
       border-bottom: 1px solid #f4f4f6; }
@@ -3588,13 +3585,14 @@ footer {
     top: 0;
     bottom: 0;
     width: calc(100% - 325px); }
+  .trends__content-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .trends__content-left {
     background: #FFFFFF;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 325px;
+    width: calc(100% - 325px);
     /* & img{
       width: 100%;
       padding: 0;
@@ -3621,10 +3619,6 @@ footer {
       font-weight: bold; }
   .trends__content-right {
     background: #fafafc;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
     width: 325px; }
     .trends__content-right-info {
       border-bottom: 1px solid #f4f4f6; }
@@ -5292,13 +5286,14 @@ footer {
     top: 0;
     bottom: 0;
     width: calc(100% - 325px); }
+  .trends__content-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .trends__content-left {
     background: #FFFFFF;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 325px;
+    width: calc(100% - 325px);
     /* & img{
       width: 100%;
       padding: 0;
@@ -5325,10 +5320,6 @@ footer {
       font-weight: bold; }
   .trends__content-right {
     background: #fafafc;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
     width: 325px; }
     .trends__content-right-info {
       border-bottom: 1px solid #f4f4f6; }
