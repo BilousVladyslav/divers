@@ -59,6 +59,12 @@
     font-family: "Open Sans";
     padding-bottom: 60px;
   }
+  &__nav-wrapper{
+    max-height: 200px;
+  }
+  &__nav-wrapper{
+    max-height: 240px;
+  }
   &__wrapper {
     max-width: 1400px;
     position: relative;
@@ -79,6 +85,7 @@
   &__second-level-nav {
     display: none;
     flex-direction: column;
+    max-height: 400px;
   }
   &__first-level-nav-text {
     font-family: "Open Sans";
@@ -392,6 +399,7 @@
     &__second-level-nav-text{
       padding: 14px;
       text-align: center;
+      max-height: 200px;
     }
   }
   .trends__first-level-nav:first-of-type .trends__first-level-nav-text {
@@ -404,6 +412,9 @@
   .trends{
     padding-bottom: 900px;
     background: #1179a3;
+    &__nav-wrapper{
+      max-height: 165px;
+    }
     &__text{
       text-align: left;
       padding-left: 17px;
