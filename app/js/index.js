@@ -52,7 +52,7 @@ if (document.body.clientWidth<1100){
 $(".request-call__close").click(function () {
   var t = this;
   $(this).parents(".request-call").removeClass("request-call_active-show");
-  $('body').removeClass("fixed");
+  $('body').css("overflow", "visible");
   setTimeout(function(){
     $(t).parents(".request-call").removeClass("request-call_active");
   }, 300);
@@ -60,7 +60,7 @@ $(".request-call__close").click(function () {
 $(".request-call__bg").click(function () {
   var t = this;
   $(this).parents(".request-call").removeClass("request-call_active-show");
-  $('body').removeClass("fixed");
+  $('body').css("overflow", "visible");
   setTimeout(function(){
     $(t).parents(".request-call").removeClass("request-call_active");
   }, 300);
@@ -69,15 +69,15 @@ $(".request-call__bg").click(function () {
 
 $("#header__menu").change(function() {
   if ($(this).is(':checked')) {
-    $('body').addClass("fixed");
+    $('body').css("overflow", "hidden");
   } else {
-    $('body').removeClass("fixed");
+    $('body').css("overflow", "visible");
   }
 });
 
 $(".request-call__open").click(function () {
   $(".request-call").addClass("request-call_active");
-  $('body').addClass("fixed");
+  $('body').css("overflow", "hidden");
   setTimeout(function(){
     $(".request-call").addClass("request-call_active-show");
   }, 1);
