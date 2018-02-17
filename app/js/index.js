@@ -23,6 +23,7 @@ if ($(".top-section__slick").length) {
     });
 }
 
+
 // trainers scroll or slider
 $(".trainers").ready(function () {
     if (document.body.clientWidth<1100){
@@ -41,6 +42,17 @@ $(".trainers").ready(function () {
         }
     }
 });
+
+
+if (document.body.clientWidth<1100){
+    if ($(".trainers__wrapper").length) {
+        $(".trainers__wrapper").slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+        });
+    }
+}
 
 if ($(".trends__slick").length) {
     $(".trends__slick").slick({
