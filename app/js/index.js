@@ -22,14 +22,26 @@ if ($(".top-section__slick").length) {
         nextArrow: '<img class="top-section__arrow top-section__arrow_right" src="../img/shop/ellipse-right.png">'
     });
 }
-if (document.body.clientWidth<1100){
-    if ($(".trainers__wrapper").length) {
-        $(".trainers__wrapper").slick({
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            arrows: false,
-    });
-}}
+
+// trainers scroll or slider
+$(".trainers").ready(function () {
+    if (document.body.clientWidth<1100){
+        if (document.getElementsByClassName('trainer-card').length < 3) {
+            new SimpleBar($('.trainers__wrapper-scroll')[0])
+            $(".trainer-card").css('width', '35%')
+        }
+        else {
+            if ($(".trainers__wrapper").length) {
+                $(".trainers__wrapper").slick({
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
+                });
+            }
+        }
+    }
+});
+
 if ($(".trends__slick").length) {
     $(".trends__slick").slick({
         slidesToShow: 1,
@@ -51,7 +63,7 @@ if (document.body.clientWidth<1100){
 $(".request-call__close").click(function () {
   var t = this;
   $(this).parents(".request-call").removeClass("request-call_active-show");
-  $('body').removeClass("fixed");
+  $('body').css("overflow", "visible");
   setTimeout(function(){
     $(t).parents(".request-call").removeClass("request-call_active");
   }, 300);
@@ -59,7 +71,7 @@ $(".request-call__close").click(function () {
 $(".request-call__bg").click(function () {
   var t = this;
   $(this).parents(".request-call").removeClass("request-call_active-show");
-  $('body').removeClass("fixed");
+  $('body').css("overflow", "visible");
   setTimeout(function(){
     $(t).parents(".request-call").removeClass("request-call_active");
   }, 300);
@@ -68,15 +80,15 @@ $(".request-call__bg").click(function () {
 
 $("#header__menu").change(function() {
   if ($(this).is(':checked')) {
-    $('body').addClass("fixed");
+    $('body').css("overflow", "hidden");
   } else {
-    $('body').removeClass("fixed");
+    $('body').css("overflow", "visible");
   }
 });
 
 $(".request-call__open").click(function () {
   $(".request-call").addClass("request-call_active");
-  $('body').addClass("fixed");
+  $('body').css("overflow", "hidden");
   setTimeout(function(){
     $(".request-call").addClass("request-call_active-show");
   }, 1);

@@ -357,10 +357,6 @@ header {
         border-bottom: none;
         border-bottom: 1px solid #50a2d2;
     }
-    #burger__rus:checked ~ .burger__lang-rus{border-color: #000000;}
-    #burger__eng:checked ~ .burger__lang-eng{border-color: #000000;}
-    #burger__ukr:checked ~ .burger__lang-ukr{border-color: #000000;}
-
 }
 .header__city-item {
   display: block;
