@@ -26,14 +26,11 @@
     </label>
     <ul class="header__items" id="header__nav">
       <div class="header__settings-burger">
-        <div class="header__burger-lang">
-          <input type="radio" name="lang" id="burger__rus" hidden checked>
-          <label class="burger__lang-rus" for="burger__rus"> РУС </label>
-          <input type="radio" name="lang" id="burger__eng" hidden>
-          <label class="burger__lang-eng" for="burger__eng"> ENG </label>
-          <input type="radio" name="lang" id="burger__ukr" hidden>
-          <label class="burger__lang-ukr" for="burger__ukr"> УКР </label>
-        </div>
+        <ul class="header__burger-lang">
+          <li class="burger__lang-current"> РУС </li>
+          <li class="burger__lang"> ENG </li>
+          <li class="burger__lang"> УКР </li>
+        </ul>
         <div class="header__burger">
           <input type="checkbox" id="controller" hidden>
           <label class="header__burger-text" for="controller">Выбрать город</label>
@@ -46,13 +43,13 @@
           </ul>
         </div>
       </div>
-      <a class="header__items-item header__items-item_1"> Курсы </a>
-      <a class="header__items-item header__items-item_2"> Подарочные сертификаты </a>
-      <a class="header__items-item header__items-item_3"> Инструктора </a>
-      <a class="header__items-item header__items-item_4"> Блог </a>
-      <a class="header__items-item header__items-item_5"> Путешествия </a>
-      <a class="header__items-item header__items-item_6"> Контакты </a>
-      <a class="header__items-item header__items-item_7"> О школе </a>
+      <a href="#block_1" class="header__items-item header__items-item_1"> Курсы </a>
+      <a href="#block_2" class="header__items-item header__items-item_3"> Инструктора </a>
+      <a href="#block_3" class="header__items-item header__items-item_2"> Подарочные сертификаты </a>
+      <a href="#block_4" class="header__items-item header__items-item_4"> Блог </a>
+      <a href="#block_5" class="header__items-item header__items-item_5"> Путешествия </a>
+      <a href="#map" class="header__items-item header__items-item_6"> Контакты </a>
+      <a href="#block_7" class="header__items-item header__items-item_7"> О школе </a>
       <div class="header__items-mobile">
         <p class="header__items-mobile-phone"> Телефон для справок и записи </p>
         <p class="header__items-mobile-number"> +380 (063) 575 20 20 </p>
@@ -232,7 +229,7 @@
           </div>
         </div>
       </section>
-      <section class="courses">
+      <section id="block_1" class="courses">
           <div class="courses__item" onclick="document.getElementById('trends__first-level_1').checked = 'checked'">
               <img class="courses__upper-layer" src="./img/courses/left-man.png" alt="">
             <div class="courses__wrapper">
@@ -263,61 +260,66 @@
             <div class="trends__first-level-nav">
               <label for="trends__first-level_1" class="trends__first-level-nav-text"> ОСНОВНЫЕ НАПРАВЛЕНИЯ </label>
               <div class="trends__second-level-nav">
+
+
+
                 <input id="trends__second-level_1-1" type="radio" name="trends-second-level_1" class="trends__second-level_controller trends__second-level_controller_1" checked hidden>
                 <label class="trends__second-level-nav-text trends__second-level-nav-text_1" for="trends__second-level_1-1"> Ознакомительное погружение </label>
-                <div class="trends__content trends__content_1 mCustomScrollbar" data-mcs-theme="dark">
-                  <div class="trends__content-left">
-                    <div class="trends__img">
-                      <img class="trends__img" src="img/trends/info.png">
-                      <div class="trends__img-overflow">
+                <div class="trends__content trends__content_1 " data-simplebar>
+                  <div class="trends__content-wrapper">
+                    <div class="trends__content-left">
+                      <div class="trends__img">
+                        <img class="trends__img" src="img/trends/info.png">
+                        <div class="trends__img-overflow">
+                        </div>
                       </div>
-                    </div>
-                    <div class="trends__content-left-h2"> Ознакомительное погружение </div>
-                    <p class="trends__big-text">
-                      Пробное погружение - способ прикоснуться к другому, неизведанному миру.
-                      Вы почувствуете каково это - дышать под водой, как это приятно и интересно. Увидите подводный мир изнутри, ощутите себя в невесомости, удивитесь, как изменяется бег времени в эти моменты.
-                      В рамках программы Discover Scuba Diving Вы совершите погружение в бассейне под руководством опытного инструктора, ознакомитесь с базовыми теоретическими знаниями и техникой подводного плавания.
-                    </p>
-                    <a class="trends__content-left-more">
-                      Подробнее &#160;
-                      <svg width="16px" height="16px">
-                        <path fill-rule="evenodd"  fill="rgb(37, 170, 225)" d="M13.959,9.414 L13.959,9.414 L8.302,15.071 L6.888,13.656 L11.544,9.000 L-0.000,9.000 L-0.000,7.000 L11.545,7.000 L6.888,2.343 L8.302,0.928 L13.959,6.585 L13.959,6.585 L15.373,8.000 L13.959,9.414 Z"/>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="trends__content-right">
-                    <div class="trends__content-right-info">
-                      <h4> ПОРЯДОК ПРОВЕДЕНИЯ: </h4>
-                      <li> Инструктаж (Брифинг) </li>
-                      <li> Подбор снаряжения </li>
-                      <li> Выполнение специальных упражнений на мелкой части бассейна </li>
-                      <li> Погружение </li>
-                      <li> Время под водой 30-40 мин. </li>
-                      <p> Общее время 2 часа </p>
-                    </div>
-                    <div class="trends__content-right-price">
-                      <div class="drop-down trends-city">
-                        <svg class="trends-city-arrow" width="9px" height="6px">
-                          <path fill-rule="evenodd"  fill="rgb(33, 33, 33)" d="M8.035,1.498 L4.500,5.034 L0.964,1.498 L1.672,0.791 L4.500,3.619 L7.328,0.791 L8.035,1.498 Z"/>
+                      <div class="trends__content-left-h2"> Ознакомительное погружение </div>
+                      <p class="trends__big-text">
+                        Пробное погружение - способ прикоснуться к другому, неизведанному миру.
+                        Вы почувствуете каково это - дышать под водой, как это приятно и интересно. Увидите подводный мир изнутри, ощутите себя в невесомости, удивитесь, как изменяется бег времени в эти моменты.
+                        В рамках программы Discover Scuba Diving Вы совершите погружение в бассейне под руководством опытного инструктора, ознакомитесь с базовыми теоретическими знаниями и техникой подводного плавания.
+                      </p>
+                      <a class="trends__content-left-more">
+                        Подробнее &#160;
+                        <svg width="16px" height="16px">
+                          <path fill-rule="evenodd"  fill="rgb(37, 170, 225)" d="M13.959,9.414 L13.959,9.414 L8.302,15.071 L6.888,13.656 L11.544,9.000 L-0.000,9.000 L-0.000,7.000 L11.545,7.000 L6.888,2.343 L8.302,0.928 L13.959,6.585 L13.959,6.585 L15.373,8.000 L13.959,9.414 Z"/>
                         </svg>
-                        <input type="checkbox" class="drop-down__controller" hidden>
-                        <p class="drop-down__text trends-city__text">
-                          Выбрать город
-                        </p>
-                        <input class="drop-down__input" type="hidden" name="">
-                        <ul class="drop-down__list trends-city__list">
-                          <li class="drop-down__item trends-city__item"> Киев </li>
-                          <li class="drop-down__item trends-city__item"> Харьков </li>
-                          <li class="drop-down__item trends-city__item"> Одесса </li>
-                          <li class="drop-down__item trends-city__item"> Днепр </li>
-                        </ul>
+                      </a>
+                    </div>
+                    <div class="trends__content-right">
+                      <div class="trends__content-right-info">
+                        <h4> ПОРЯДОК ПРОВЕДЕНИЯ: </h4>
+                        <li> Инструктаж (Брифинг) </li>
+                        <li> Подбор снаряжения </li>
+                        <li> Выполнение специальных упражнений на мелкой части бассейна </li>
+                        <li> Погружение </li>
+                        <li> Время под водой 30-40 мин. </li>
+                        <p> Общее время 2 часа </p>
                       </div>
-                      <p class="trends__content-right-price-value"> ОТ &#160; <span> 900 </span> <a> ГРН </a></p>
-                      <div class="trends__content-right-price-btn1 request-call__open">
-                        Подарить курс
-                      </div>
-                      <div class="trends__content-right-price-btn2 request-call__open">
-                        Записаться
+                      <div class="trends__content-right-price">
+                        <div class="drop-down trends-city">
+                          <svg class="trends-city-arrow" width="9px" height="6px">
+                            <path fill-rule="evenodd"  fill="rgb(33, 33, 33)" d="M8.035,1.498 L4.500,5.034 L0.964,1.498 L1.672,0.791 L4.500,3.619 L7.328,0.791 L8.035,1.498 Z"/>
+                          </svg>
+                          <input type="checkbox" class="drop-down__controller" hidden>
+                          <p class="drop-down__text trends-city__text">
+                            Выбрать город
+                          </p>
+                          <input class="drop-down__input" type="hidden" name="">
+                          <ul class="drop-down__list trends-city__list">
+                            <li class="drop-down__item trends-city__item"> Киев </li>
+                            <li class="drop-down__item trends-city__item"> Харьков </li>
+                            <li class="drop-down__item trends-city__item"> Одесса </li>
+                            <li class="drop-down__item trends-city__item"> Днепр </li>
+                          </ul>
+                        </div>
+                        <p class="trends__content-right-price-value"> ОТ &#160; <span> 900 </span> <a> ГРН </a></p>
+                        <div class="trends__content-right-price-btn1 request-call__open">
+                          Подарить курс
+                        </div>
+                        <div class="trends__content-right-price-btn2 request-call__open">
+                          Записаться
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -393,8 +395,7 @@
                   </div>
                 </div>
 
-                <input id="trends__second-level_1-3" type="radio" name="trends-second-level_1" class="trends__second-level_controller trends__second-level_controller_3" hidden>
-                <label class="trends__second-level-nav-text trends__second-level-nav-text_3" for="trends__second-level_1-3"> Дайвинг с дельфинами </label>
+
                 <div class="trends__content trends__content_3">
                   <div class="trends__content-left">
                     <div class="trends__img">
@@ -1043,7 +1044,7 @@
         </div>
         <img class="trends__tortoise" src="img/trends/tortoise.png">
       </section>
-      <section class="trainers" style="background-color: #FAFAFC">
+      <section id="block_2" class="trainers" style="background-color: #FAFAFC">
             <h2 class="trainers__team">Наша команда</h2>
             <p class="trainers__text">
               Все члены нашей команды являються сертифицированными<br>
@@ -1245,13 +1246,13 @@
             +38 (063) 575 20 20
           </p>
         </div>
-        <div class="footer__desktop-content-nav">
-          <a href="#"> Курсы </a>
+        <div id="footer__nav" class="footer__desktop-content-nav">
+          <a href="#block_1"> Курсы </a>
           <a href="#"> Сертификаты </a>
-          <a href="#"> Инструктора </a>
+          <a href="#block_2"> Инструктора </a>
           <a href="#"> Блог </a>
           <a href="#"> Путешествия </a>
-          <a href="#"> Контакты </a>
+          <a href="#map"> Контакты </a>
           <a href="#"> О школе </a>
         </div>
         <div class="footer__desktop-content-location1">
@@ -1314,13 +1315,13 @@
           </div>
         </div>
         <div class="footer__tablet-columns-2">
-          <div class="footer__tablet-columns-2-nav">
-            <a href="#"> Курсы </a>
+          <div id="footer__tablet-nav" class="footer__tablet-columns-2-nav">
+            <a href="#block_1"> Курсы </a>
             <a href="#"> Сертификаты </a>
-            <a href="#"> Инструктора </a>
+            <a href="#block_2"> Инструктора </a>
             <a href="#"> Блог </a>
             <a href="#"> Путешествия </a>
-            <a href="#"> Контакты </a>
+            <a href="#map"> Контакты </a>
             <a href="#"> О школе </a>
           </div>
           <div class="footer__tablet-columns-2-location1">
@@ -1587,7 +1588,7 @@
     <script src="./libs/jquery-3.2.1.min.js"></script>
     <script src="./libs/slick/slick.min.js" charset="utf-8"></script>
     <script src="./libs/alegar-lib.js" charset="utf-8"></script>
+    <script src="./libs/simplebar/simplebar.js" charset="utf-8"></script>
     <script src="./js/index.js" charset="utf-8"></script>
-    <script src="libs/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
   </body>
 </html>
