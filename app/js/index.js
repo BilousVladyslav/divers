@@ -152,13 +152,6 @@ $(function(){
       $(".header__items-item_3").removeClass("header__items-item_active");
     }
 
-    if ($(this).scrollTop() >= $(".insta").offset().top &&
-        $(this).scrollTop() < $(".insta").offset().top + $(".insta").outerHeight()) {
-      $(".header__items-item_4").addClass("header__items-item_active");
-    } else {
-      $(".header__items-item_4").removeClass("header__items-item_active");
-    }
-
     if ($(this).scrollTop() >= $(".map-city").offset().top &&
         $(this).scrollTop() < $(".map-city").offset().top + $(".insta").outerHeight()) {
       $(".header__items-item_6").addClass("header__items-item_active");

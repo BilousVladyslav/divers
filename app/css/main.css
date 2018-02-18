@@ -1937,7 +1937,8 @@ a {
     font-family: "Open Sans";
     padding-bottom: 60px; }
   .trends__nav-wrapper {
-    max-height: 200px; }
+    max-height: 200px;
+    position: static !important; }
   .trends__nav-wrapper {
     max-height: 240px; }
   .trends__wrapper {
@@ -3552,7 +3553,8 @@ footer {
     font-family: "Open Sans";
     padding-bottom: 60px; }
   .trends__nav-wrapper {
-    max-height: 200px; }
+    max-height: 200px;
+    position: static !important; }
   .trends__nav-wrapper {
     max-height: 240px; }
   .trends__wrapper {
@@ -5278,7 +5280,8 @@ footer {
     font-family: "Open Sans";
     padding-bottom: 60px; }
   .trends__nav-wrapper {
-    max-height: 200px; }
+    max-height: 200px;
+    position: static !important; }
   .trends__nav-wrapper {
     max-height: 240px; }
   .trends__wrapper {
